@@ -1,0 +1,100 @@
+html, body, form, input, h4 {
+    margin: 0;
+    padding: 0;
+}
+form {
+    width: 395px;
+    height: 670px;
+    background: url('../images/formBackground.jpg');
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px 16px;
+    margin: 3px;
+    border-radius: 5px;
+    font-family: Tahoma;
+}
+    form>h4 {
+        color: white;
+        font-size: 0.9em;
+        margin: 10px 0;
+    }
+    form>section {
+        background-color: rgba(230, 230, 230, 0.3);
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 2px;
+        padding: 7px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        text-align: center;
+    }
+        form>section>input {
+             height: 24px;
+             width: 185px;
+             border-radius: 2px;
+             border: 0;
+             padding-left: 5px;
+        }
+            form>section>input:focus, textarea:focus {
+                background-color: rgba(240, 240, 240, 0.7);
+            }
+        form>section>label {
+            float: left;
+            font-size: 0.76em;
+            line-height: 22px;
+            width: 80px;
+            text-align: left;
+        }
+        section#address {
+            height: 106px;
+        }
+            section#address>textarea {
+                height: 90%;
+                width: 185px;
+                border-radius: 2px;
+                border: 0;
+            }
+        section#credit-card {
+            height: 70px;
+            text-align: left;
+        }
+            section#credit-card>input {
+                width: 10px;
+                height: 10px;
+                margin-left: 18px;
+                margin-top: 14px;
+            }
+            section#credit-card>label {
+                float: none;
+                line-height: 25px;
+            }
+                section#credit-card>label:nth-child(3):before {
+                    content: url(../images/visa.png);
+                    vertical-align: -15%;
+                    margin-right: 2px;
+                }
+                section#credit-card>label:nth-child(5):before {
+                    content: url(../images/amex.png);
+                    vertical-align: -15%;
+                    margin-right: 2px;
+                }
+                section#credit-card>label:last-child:before {
+                    content: url(../images/mastercard.png);
+                    vertical-align: -15%;
+                    margin-right: 2px;
+                }
+            section#credit-card>div {
+                font-size: 0.76em;
+            }
+input[type=submit] {
+    color: white;
+    background-color: #04152F;
+    width: 95px;
+    height: 27px;
+    border-radius: 20px;
+    border: 0;
+    margin-left: 130px;
+    margin-top: 4px;
+}

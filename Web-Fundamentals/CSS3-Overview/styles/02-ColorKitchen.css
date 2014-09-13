@@ -1,0 +1,135 @@
+html, body, aside, nav, section, article, div, header, footer, ul, li, a {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url("../images/colorful_dots_on_black.jpg");
+    background-repeat: repeat;
+    font-family: Tahoma;
+}
+body>header {
+    color: #FFFF00;
+    text-align: center;
+    font-size: 3.8em;
+    height: 75pt;
+    font-weight: bold;
+    background: linear-gradient(to right, red 33%, green 33%, green 67%, blue 67%);
+}
+aside {
+    background: rgba(230, 230, 230, 0.95);
+    float: left;
+    width: 20%;
+    height: 340px;
+    border-radius: 30px;
+    margin: 37px 37px 0 15px;
+}
+    aside header {
+        text-decoration: underline;
+        font-size: 2em;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    aside li {
+        padding: 10px 0 10px 15px;
+        margin-left: 15px;
+        list-style-type: none;
+        border-radius: 10px;
+        width: 80%;
+    }
+    aside li:before {
+        margin-right: 10px;
+        content: url("../images/bullet.png")
+    }
+        aside li a {
+            font-size: 1.25em;
+            text-decoration: none;
+            color: black;
+        }
+        aside li a:visited {
+            color: #7F7986;
+        }
+        aside li:first-child:hover {
+            background-color: red;
+        }
+        aside li:nth-child(2):hover {
+            background-color: orange;
+        }
+        aside li:nth-child(3):hover {
+            background-color: yellow;
+        }
+        aside li:nth-child(4):hover {
+            background-color: green;
+        }
+        aside li:nth-child(5):hover {
+            background-color: blue;
+        }
+        aside li:last-child:hover {
+            background-color: #800080;
+        }
+section {
+    margin-top: 35px;
+    color: black;
+    float: left;
+    width: 75%;
+}
+    section>article {
+        margin-bottom: 10px;
+        background: rgba(230, 230, 230, 0.95);
+        border-radius: 30px;
+        padding: 20px;
+    }
+        article>header {
+            font-size: 2.2em;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        article>footer a{
+            color: #808080;
+            font-style: italic;
+            font-size: 1.22em;
+        }
+        article>div {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        article>div::first-line {
+            font-style: italic;
+        }
+        article>div::first-letter {
+            font-size: 5em;
+        }
+        article>span {
+            font-size: 1.2em;
+        }
+#webColors {
+    color: white;
+    background-color: red;
+}
+#webSafeColors {
+    background-color: orange;
+}
+#RGB {
+    background-color: yellow;
+}
+#RGBA {
+    background-color: green;
+    color: white;
+}
+#\#HSLHSV {
+    background-color: blue;
+    color: white;
+}
+#\#lorem {
+    background-color: #800080;
+    color: white;
+}
+span[lang] {
+    font-style: italic;
+    color: #00008B;
+}
+span[lang]:before {
+    content: '"';
+}
+span[lang]:after {
+    content: '"';
+}

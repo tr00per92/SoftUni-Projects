@@ -1,0 +1,13 @@
+table, td, th {
+    border: 1px solid black;
+}
+table {
+    width: 500px;
+    font-size: 23px;
+}
+    table thead {
+        font-size: 28px;
+    }
+    table tfoot {
+        text-align: right;
+    }

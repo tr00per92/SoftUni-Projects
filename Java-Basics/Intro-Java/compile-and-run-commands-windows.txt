@@ -1,0 +1,5 @@
+I use windows 7.
+
+set path=%path%;C:Program Files\Java\jdk1.8.0\bin
+javac SumTwoNumbers.java
+java SumTwoNumbers

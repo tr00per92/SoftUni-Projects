@@ -1,0 +1,14 @@
+body {
+    padding: 0;
+    margin: 6px;
+}
+main {
+    max-width: 1000px;
+    height: 140px;
+}
+div {
+    background-color: #FF9C00;
+    border-radius: 100px;
+    margin-right: 5%;
+    border: 1px solid #234465;
+}

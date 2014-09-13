@@ -1,0 +1,32 @@
+#logo {
+    float: right;
+    width: 20%;
+    height: 20%;
+}
+body {
+    background: url('../images/softuni-background.jpg');
+    background-size: 100% auto;
+}
+    body header h1 {
+        color: #F3BE60;
+        font-family: Calibri;
+        font-size: 38pt;
+    }
+    body section ul {
+        list-style-type: square;
+        color: #F2B254;
+        font-size: 34pt;
+        font-family: Calibri;
+    }
+    body section ul div {
+        background-color: #20201E;
+        color: #FBEEC9;
+        font-family: Consolas;
+        font-size: 24pt;
+        border: 2px solid #747065;
+        width: 93%;
+        margin: 0 auto;
+    }
+    body section ul span {
+        color: white;
+    }

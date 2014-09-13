@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/05-LaptopChoice.css">
+    <title>Laptop Choice</title>
+</head>
+<body>
+<div id="wrapper">
+    <section>
+        <h2>Apple's Laptops (6)</h2>
+        <button onclick="window.open('http://www.apple.com/', '_blank')">
+            <span class="title">Apple MacBook Air</span>
+            <br><span class="specs">11.6 inch/1.3GHz Haswell</span>
+            <img src="images/mac.png" alt="mac"/>
+            <span class="prize">&dollar;1,129.00</span>
+        </button>
+        <button onclick="window.open('http://www.apple.com/', '_blank')">
+            <span class="title">Apple MacBook Air</span>
+            <br><span class="specs">11.6 inch/1.4GHz Haswell</span>
+            <img src="images/mac-new.png" alt="mac"/>
+            <span class="prize">&dollar;1,825.00</span>
+        </button>
+        <button onclick="window.open('http://www.apple.com/', '_blank')">
+            <span class="title">Apple MacBook Air</span>
+            <br><span class="specs">13.3 inch/1.3GHz Haswell</span>
+            <img src="images/mac.png" alt="mac"/>
+            <span class="prize">&dollar;1,919.00</span>
+        </button>
+        <button onclick="window.open('http://www.apple.com/', '_blank')">
+            <span class="title">Apple MacBook Air</span>
+            <br><span class="specs">13.3 inch/1.4GHz Haswell 256GB SSD</span>
+            <img src="images/mac.png" alt="mac"/>
+            <span class="prize">&dollar;1,999.00</span>
+        </button>
+        <button onclick="window.open('http://www.apple.com/', '_blank')">
+            <span class="title">Apple MacBook Air</span>
+            <br><span class="specs">11.6 inch/1.4GHz Haswell</span>
+            <img src="images/mac-new.png" alt="mac"/>
+            <span class="prize">&dollar;2,119.00</span>
+        </button>
+        <button onclick="window.open('http://www.apple.com/', '_blank')">
+            <span class="title">Apple MacBook Pro</span>
+            <br><span class="specs">13.3 inch/2.5GHz Ivy Bridge</span>
+            <img src="images/mac2.png" alt="mac"/>
+            <span class="prize">&dollar;2,529.00</span>
+        </button>
+    </section>
+    <aside>
+        <p>Price</p>
+        <span class="min">1700</span>
+        <span class="max">2600</span>
+        <br><input type="range" min="1700" max="2600" step="50"/>
+        <p>RAM</p>
+        <span class="min">2048</span>
+        <span class="max">4096</span>
+        <br><input type="range" min="2048" max="4096" step="512"/>
+        <p>Disc</p>
+        <span class="min">100GB</span>
+        <span class="max">2000GB</span>
+        <br><input type="range" min="100" max="2000" step="100"/>
+        <p>Display</p>
+        <span class="min">11.6</span>
+        <span class="max">18.4</span>
+        <br><input type="range" min="11.6" max="18.4" step="0.1" value="14.5"/>
+        <p>Weight</p>
+        <span class="min">1</span>
+        <span class="max">6</span>
+        <br><input type="range" min="1" max="6" step="0.1" value="4"/>
+        <p>Warranty</p>
+        <span class="min">12 month</span>
+        <span class="max">60 month</span>
+        <br><input type="range" min="12" max="60" step="6"/>
+    </aside>
+</div>
+</body>
+</html>

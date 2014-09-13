@@ -1,0 +1,22 @@
+# Site settings
+title: "Software University"
+description: "Accesible and high quality education software"
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+paginate: 5
+
+# Links
+links:
+  - title: "home"
+    url: /
+  - title: "about"
+    url: /about
+  - title: "twitter"
+    url: https://twitter.com/softunibg
+  - title: "RSS Feed"
+    url: /feed.xml

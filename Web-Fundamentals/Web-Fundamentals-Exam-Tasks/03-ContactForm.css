@@ -1,0 +1,70 @@
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+/* resetting margins and paddings */
+html, body, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* setting the background */
+html {
+    background: url("img/4.%20background.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+/* styling the form */
+form {
+    background-color: rgba(72, 72, 72, 0.4);
+    max-width: 520px;
+    height: 525px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 51px 0;
+    margin: 37px auto 0;
+}
+    /* styles for every form field */
+    form > input, form > textarea {
+        font-family: Montserrat, sans-serif;
+        font-size: 1.1em;
+        display: block;
+        margin: 0 auto 27px;
+        width: 86%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 55px;
+        border: 3px solid white;
+        padding: 12px 12px 12px 54px;
+    }
+        form > input:focus, form > textarea:focus {
+            border-color: #4094D0;
+        }
+
+    /* specific individual field styles */
+    form > input[type="text"] {
+        background: white url("img/5.%20name.svg") no-repeat 11px 10px;
+        background-size: 30px 30px;
+    }
+    form > input[type="email"] {
+        background: white url("img/6.%20email.svg") no-repeat 11px 10px;
+        background-size: 30px 30px;
+    }
+    form > textarea {
+        height: 150px;
+        background: white url("img/7.%20comment.svg") no-repeat 11px 8px;
+        background-size: 30px 30px;
+    }
+    form > input[type="submit"] {
+        color: white;
+        background-color: #3598DB;
+        border-width: 4px;
+        height: 80px;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 0;
+    }
+        form > input[type="submit"]:hover {
+            color: #3598DB;
+            background-color: white;
+            cursor: pointer;
+        }

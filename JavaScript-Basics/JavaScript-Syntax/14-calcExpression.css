@@ -1,0 +1,21 @@
+section {
+    width: 20%;
+    height: 140px;
+    margin: 0 auto;
+    text-align: center;
+    background: cornflowerblue;
+}
+p, input {
+    color: orangered;
+    background: darkblue;
+    border: 0;
+    width: 75%;
+    height: 25px;
+    margin: 10px auto;
+    padding: 5px 15px;
+}
+button {
+    height: 30px;
+    border: 1px solid black;
+    width: 40%;
+}

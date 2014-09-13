@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software University</title>
+    <description>Accesible and high quality education software</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>My Second Post!</title>
+        <description>&lt;p&gt;Nullam vestibulum lacus ac cursus interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et tincidunt orci. Nulla vehicula, augue ac viverra molestie, orci neque tristique libero, sollicitudin pretium nibh mi eget ante. Nulla feugiat felis eget nisl varius sodales. Fusce vitae mattis nisl. Mauris sapien lorem, vestibulum condimentum auctor non, lacinia ac leo. Quisque blandit dolor sit amet mi tempor, id viverra arcu scelerisque. Etiam ut enim ac nisi dignissim convallis. Ut suscipit rutrum semper. Mauris eu urna eget turpis varius fermentum at non diam. Pellentesque tempus et ipsum nec aliquet. Cras sollicitudin tristique eros, id auctor quam ultricies eu. Vivamus elementum volutpat mauris et ultrices. &lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Jul 2014 21:52:38 +0300</pubDate>
+        <link>/jekyll/update/2014/07/04/my-second-post/</link>
+        <guid isPermaLink="true">/jekyll/update/2014/07/04/my-second-post/</guid>
+      </item>
+    
+      <item>
+        <title>My First Post!</title>
+        <description>&lt;p&gt;Duis cursus nulla velit, sed accumsan odio semper sed. Proin ut mauris posuere, eleifend dui vitae, cursus enim. Nunc suscipit lectus accumsan nulla eleifend interdum et sit amet elit. Vestibulum luctus purus sit amet diam lacinia, quis adipiscing urna tempor. Donec lacinia a justo vitae condimentum. Maecenas eget ante id nulla placerat condimentum. Mauris tempor vitae elit non viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In eu metus sit amet justo auctor rutrum posuere sed purus. Pellentesque eget hendrerit est, vel luctus eros. Curabitur mi felis, rutrum a mi vitae, convallis luctus augue. Morbi volutpat justo egestas massa malesuada, at rutrum dui fermentum. Suspendisse potenti. &lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Jul 2014 00:52:38 +0300</pubDate>
+        <link>/posts/2014/07/03/my-first-post/</link>
+        <guid isPermaLink="true">/posts/2014/07/03/my-first-post/</guid>
+      </item>
+    
+  </channel>
+</rss>

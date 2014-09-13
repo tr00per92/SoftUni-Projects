@@ -1,0 +1,82 @@
+html, body, div, section, p, header, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+}
+#wrapper {
+    width: 752px;
+    height: 296px;
+    box-sizing: border-box;
+    margin: 6px 0 0 13px;
+    border-top: 7px dotted yellow;
+    border-right: 15px solid green;
+    border-bottom: 10px double blue;
+    border-left: 7px dashed red;
+    box-shadow: 20px 20px 8px #3F3F3F;
+    text-align: center;
+}
+header>h1 {
+    margin: 15px;
+    font-weight: normal;
+    font-size: 3.3em;
+    text-transform: uppercase;
+    text-shadow: 10px 13px 10px #A9AAAA;
+}
+section {
+    margin: 40px auto;
+    padding: 15px;
+    box-shadow: 0 0 0 3px red, 0 0 0 6px yellow,
+                0 0 0 9px green, 0 0 0 12px blue;
+    width: 85%;
+    border-radius: 60px;
+}
+    section>p {
+        font-size: 1.5em;
+    }
+    section>div {
+        line-height: 120%;
+        display: inline-block;
+        width: 230px;
+        background-color: #D8921A;
+        font-size: 1.22em;
+        border-top: 4px solid #FFA500;
+        border-left: 4px solid #FFA500;
+        border-bottom: 4px solid #AB6E00;
+        border-right: 4px solid #AB6E00;
+        margin-top: 20px;
+        padding-bottom: 2px;
+    }
+
+/* "flying" divs */
+#floating-div-1, #floating-div-2, #floating-div-3 {
+    position: absolute;
+    background-color: rgba(150, 150, 150, 0.85);
+    border: 3px dashed white;
+    box-shadow: 0 0 0 6px rgba(150, 150, 150, 0.85);
+}
+    #floating-div-1 {
+        top: 50px;
+        left: 705px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: white;
+        font-weight: bold;
+        font-size: 1.42em;
+        border-radius: 60px;
+        width: 150px;
+        height: 85px;
+    }
+    #floating-div-2 {
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+        top: 123px;
+        left: 643px;
+    }
+    #floating-div-3 {
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        top: 175px;
+        left: 592px;
+    }

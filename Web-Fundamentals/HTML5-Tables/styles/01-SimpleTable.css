@@ -1,0 +1,9 @@
+table {
+    width: 500px;
+    font-size: 19px;
+    font-family: Verdana;
+}
+    table thead {
+        font-size: 35px;
+        text-align: left;
+    }

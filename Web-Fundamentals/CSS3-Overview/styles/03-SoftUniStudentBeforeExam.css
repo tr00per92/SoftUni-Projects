@@ -1,0 +1,85 @@
+html, body, div, main {
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 510px;
+    height: 510px;
+}
+div {
+    border: 3px solid black;
+    border-radius: 50%;
+}
+div:first-child {
+    background-color: #FFFF00;
+    width: 98%;
+    height: 98%;
+    margin: 4px;
+}
+div:nth-child(2) {
+    background-color: white;
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    top: 95px;
+    left: 100px;
+}
+div:nth-child(3) {
+    background-color: white;
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    top: 95px;
+    left: 300px;
+}
+div:nth-child(4) {
+    background-color: red;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 205px;
+    left: 210px;
+}
+div:nth-child(5) {
+    background-color: black;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 149px;
+    left: 153px;
+}
+div:nth-child(6) {
+     background-color: black;
+     width: 24px;
+     height: 24px;
+     position: absolute;
+     top: 99px;
+     left: 303px;
+}
+div:nth-child(7) {
+    background-color: white;
+    width: 245px;
+    height: 95px;
+    position: absolute;
+    top: 305px;
+    left: 125px;
+    border-radius: 60px;
+}
+div:nth-child(8) {
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 305px;
+    left: 200px;
+    border-radius: 0 0 10px 10px;
+}
+div:nth-child(9) {
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 305px;
+    left: 251px;
+    border-radius: 0 0 10px 10px;
+}

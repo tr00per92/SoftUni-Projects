@@ -1,0 +1,46 @@
+html, body, main, header, h1 {
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 900px;
+    height: 600px;
+    padding: 15px;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    /* chrome */
+    background-image: url('../images/TediHula.png'),
+                      url('../images/PetiaHula.png'),
+                      url('../images/VladoGHula.png'),
+                      url('../images/AlexHula.png'),
+                      url('../images/NakovHula.png'),
+                      url('../images/VladoKHula.png'),
+                      url('../images/HawaiiBackground.png'),
+                      -webkit-radial-gradient(20% 20%, ellipse, #FFFFAA, #FFFFD4 10%, #E8E7DC 15%, #3A75CF 50%);
+
+    /* mozilla */
+    background-image: url('../images/TediHula.png'),
+                      url('../images/PetiaHula.png'),
+                      url('../images/VladoGHula.png'),
+                      url('../images/AlexHula.png'),
+                      url('../images/NakovHula.png'),
+                      url('../images/VladoKHula.png'),
+                      url('../images/HawaiiBackground.png'),
+                      -moz-radial-gradient(20% 20%, ellipse, #FFFFAA, #FFFFD4 10%, #E8E7DC 15%, #3A75CF 50%);
+
+    background-position: 262px 362px, 182px 192px, 42px 222px,
+                         492px 202px, 412px 157px, 672px 232px, 0 0, 0 0;
+}
+@font-face {
+    font-family: Animated;
+    src: url('../fonts/Animated.ttf');
+}
+h1 {
+    text-align: right;
+    font-family: Animated;
+    color: #FDBC21;
+    font-size: 3em;
+}

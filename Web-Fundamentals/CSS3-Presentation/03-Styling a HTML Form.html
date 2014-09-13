@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/03-StylingHTMLForm.css">
+    <title>Styling a HTML Form</title>
+</head>
+<body>
+    <form method="post">
+        <h4>Step 1: Your details</h4>
+        <section>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="First and last name"/>
+        </section>
+        <section>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@domain.com"/>
+        </section>
+        <section>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="eg. +447500000000"/>
+        </section>
+
+        <h4>Step 2: Delivery address</h4>
+        <section id="address">
+            <label for="addr">Address</label>
+            <textarea id="addr"></textarea>
+        </section>
+        <section>
+            <label for="poste">Post code</label>
+            <input type="text" id="poste"/>
+        </section>
+        <section>
+            <label for="country">Country</label>
+            <input type="text" id="country"/>
+        </section>
+
+        <h4>Step 3: Card details</h4>
+        <section id="credit-card">
+            <div>Card type</div>
+            <input type="radio" name="card" id="visa"/>
+            <label for="visa">VISA</label>
+            <input type="radio" name="card" id="amex"/>
+            <label for="amex">AmEx</label>
+            <input type="radio" name="card" id="mastercard"/>
+            <label for="mastercard">Mastercard</label>
+        </section>
+        <section>
+            <label for="card-num">Card number</label>
+            <input type="text" id="card-num"/>
+        </section>
+        <section>
+            <label for="code">Security code</label>
+            <input type="text" id="code"/>
+        </section>
+        <section>
+            <label for="card-name">Name on card</label>
+            <input type="text" id="card-name" placeholder="exact name as on the card"/>
+        </section>
+
+        <input type="submit" value="BUY IT!"/>
+    </form>
+</body>
+</html>

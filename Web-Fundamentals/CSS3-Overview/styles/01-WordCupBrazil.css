@@ -1,0 +1,135 @@
+html, body, section, table {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+}
+section {
+    width: 1215px;
+    height: 441px;
+    box-sizing: border-box;
+    background-color: #00923E;
+    padding-top: 17px;
+}
+table {
+    width: 97%;
+    height: 95%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+    table, th, td {
+        border-spacing: 0;
+        border: 1px solid black;
+    }
+    table th {
+        background-color: #F8C711;
+        font-size: 1.9em;
+        height: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    table td {
+        font-size: 1.25em;
+        text-align: center;
+        background-color: white;
+    }
+    table tr:nth-child(2n+1) td {
+        background-color: #C8C8C8;
+    }
+    td:last-child {
+        width: 65px;
+    }
+
+/* result selectors */
+.result {
+    width: 170px;
+}
+.result select {
+   height: 70%;
+   width: 36%;
+   color: green;
+   font-size: 1.05em;
+}
+    .result select:disabled {
+        color: red;
+        background-color: #DCDCDC;
+    }
+
+/* input buttons */
+input[type="submit"] {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    color: white;
+    background-color: green;
+    font-weight: bold;
+}
+    input[type="submit"]:disabled {
+        background-color: red;
+    }
+
+/* teams and flags */
+.first-team {
+    text-align: right;
+    padding-right: 15px;
+    width: 185px;
+}
+.second-team {
+    text-align: left;
+    padding-left: 15px;
+    width: 185px;
+}
+.first-team:after {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.second-team:before {
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+#brazil:after {
+    content: url("../images/brazil.png");
+}
+#spain:after {
+    content: url("../images/spain.png");
+}
+#italy:after {
+    content: url("../images/italy.png");
+}
+#argentina:after {
+    content: url("../images/argentina.png");
+}
+#germany:after {
+    content: url("../images/germany.png");
+}
+#mexico:before {
+    content: url("../images/mexico.png");
+}
+#holland:before {
+    content: url("../images/holland.png");
+}
+#england:before {
+    content: url("../images/england.png");
+}
+#bih:before {
+    content: url("../images/bih.png");
+}
+#portugal:before {
+    content: url("../images/portugal.png");
+}
+
+/* rounded borders */
+th:first-child {
+    border-top-left-radius: 18px;
+}
+th:last-child {
+    border-top-right-radius: 18px;
+}
+#germany {
+    border-bottom-left-radius: 18px;
+}
+#last-cell {
+    border-bottom-right-radius: 18px;
+}

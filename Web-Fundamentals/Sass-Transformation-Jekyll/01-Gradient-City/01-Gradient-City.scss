@@ -1,0 +1,174 @@
+@mixin gradient($direction, $color) {
+	background: linear-gradient(to $direction, $color, white);
+	background: -moz-linear-gradient($direction, $color, white);
+}
+@mixin radial-gradient($color) {
+	background: radial-gradient($color, white);
+	background: -moz-radial-gradient($color, white);
+}
+
+body {
+	@include gradient(bottom, #818181);
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper {
+	font-family: Tahoma;
+	color: #808080;
+	max-width: 1000px;
+	text-align: center;
+	border: 3px double #808080;
+	margin: 0 auto;
+	background: white;
+	
+	>header {
+		border: 3px double #808080;
+		margin: 20px;
+		
+		h1 {
+			font-size: 42px;
+		}
+		
+		li {
+			list-style-type: none;
+			display: inline;
+			border: 1px solid #808080;
+			padding: 10px;
+			margin-right: 60px;
+			
+			&:hover {
+				@include gradient(bottom, #818181);	
+				color: white;
+				cursor: pointer;
+			}
+		}
+	}
+	
+	section {
+		border: 3px double #808080;
+		margin: 20px;
+		
+		h1 {
+			text-decoration: underline;
+			font-size: 18px;
+		}
+		
+		h2 {
+			font-weight: normal;
+			font-size: 16px;
+		}
+		
+		article {
+			margin: 20px;
+			border: 1px solid #808080;
+			padding: 10px 0;
+			
+			>div>div {
+				width: 140px;
+				height: 140px;
+				display: inline-block;
+				border-radius: 20px;
+			}	
+		}
+		
+		&.linear {
+			article:first-of-type {
+				div.purple {
+					@include gradient(bottom, #300130);				
+				}
+				div.blue {
+					@include gradient(bottom, #0404B0);
+				}
+				div.green {
+					@include gradient(bottom, #002E00);				
+				}
+				div.yellow {
+					@include gradient(bottom, #F5F501);
+				}
+				div.orange {
+					@include gradient(bottom, #EB9100);				
+				}
+				div.red {
+					@include gradient(bottom, #CD0000);
+				}
+			}
+			article:nth-of-type(2) {
+				div.purple {
+					@include gradient(right, #300130);				
+				}
+				div.blue {
+					@include gradient(right, #0404B0);
+				}
+				div.green {
+					@include gradient(right, #002E00);				
+				}
+				div.yellow {
+					@include gradient(right, #F5F501);
+				}
+				div.orange {
+					@include gradient(right, #EB9100);				
+				}
+				div.red {
+					@include gradient(right, #CD0000);
+				}
+			}
+			article:nth-of-type(3) {
+				div.purple {
+					@include gradient(bottom right, #300130);				
+				}
+				div.blue {
+					@include gradient(bottom right, #0404B0);
+				}
+				div.green {
+					@include gradient(bottom right, #002E00);				
+				}
+				div.yellow {
+					@include gradient(bottom right, #F5F501);
+				}
+				div.orange {
+					@include gradient(bottom right, #EB9100);				
+				}
+				div.red {
+					@include gradient(bottom right, #CD0000);
+				}
+			}			
+		}
+		&.radial {
+			div.purple {
+				@include radial-gradient(#300130);				
+			}
+			div.blue {
+				@include radial-gradient(#0404B0);
+			}
+			div.green {
+				@include radial-gradient(#002E00);				
+			}
+			div.yellow {
+				@include radial-gradient(#F5F501);
+			}
+			div.orange {
+				@include radial-gradient(#EB9100);				
+			}
+			div.red {
+				@include radial-gradient(#CD0000);
+			}
+		}
+	}
+	
+	footer {
+		border: 3px double #808080;
+		margin: 20px;
+		h3 {
+			text-decoration: underline;
+		}
+		li {
+			list-style-type: none;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
