@@ -1,7 +1,8 @@
 *.suo
-*.class
+*.[Cc]lass
+*.[Cc]ache
 
 .idea/
 out/
-bin/
-obj/
+[Bb]in/
+[oO]bj/
