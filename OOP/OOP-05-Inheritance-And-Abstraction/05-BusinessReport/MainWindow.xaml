@@ -1,0 +1,28 @@
+﻿<Window x:Class="_05_BusinessReport.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Business Report" Height="400" Width="600"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <Button Content="Import Data" HorizontalAlignment="Left" Margin="10,10,0,0" Name="ImportButton"
+                VerticalAlignment="Top" Width="125" Height="30" FontSize="18" Click="ImportButton_Click"/>
+        <StackPanel HorizontalAlignment="Left" Height="316" Margin="10,45,0,0"
+                    VerticalAlignment="Top" Width="220">
+            <TextBlock Height="30" TextWrapping="Wrap" Text="Reports: " FontSize="18"/>
+            <Expander Header="Project Reports" IsExpanded="True">
+                <StackPanel Margin="10,0,10,0" Name="ProjectReports">
+                </StackPanel>
+            </Expander>
+            <Expander Header="Sales Reports" IsExpanded="True">
+                <StackPanel Margin="10,0,10,0" Name="SalesReports">
+                </StackPanel>
+            </Expander>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="316" Margin="255,45,0,0"
+                    VerticalAlignment="Top" Width="329">
+            <TextBlock Height="30" TextWrapping="Wrap" Text="Report details: " FontSize="18"/>
+            <TextBox Height="278" TextWrapping="Wrap" Margin="0,0,10,0" VerticalScrollBarVisibility="Visible"
+                     FontSize="15" Name="Detais"/>
+        </StackPanel>
+    </Grid>
+</Window>
