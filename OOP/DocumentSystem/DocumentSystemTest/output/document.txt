@@ -1,0 +1,12 @@
+Title: Testing document system
+Author: Tr00peR
+
+I am a paragraph
+[url=http://google.com][/url]
+I am another paragraph
+
+THE BEST HEADER
+
+Default Font Second Red Green Italic
+
+Consolas Bold Blue Italic
