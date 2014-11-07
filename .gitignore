@@ -1,8 +1,9 @@
 *.suo
 *.[Cc]lass
 *.[Cc]ache
+*.dat
 
 .idea/
 out/
 [Bb]in/
-[oO]bj/
+[Oo]bj/
