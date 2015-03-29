@@ -1,0 +1,8 @@
+section>article>p {
+    text-align: center;
+}
+    section>article>p>img {
+        max-width: 440px;
+        width: 100%;
+        margin-top: 0.6rem;
+    }

@@ -1,0 +1,10 @@
+article > div {
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+@media screen and (max-width: 550px) {
+    article > div {
+        width: 100%;
+    }
+}
