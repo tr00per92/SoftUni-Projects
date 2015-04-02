@@ -1,0 +1,220 @@
+header, section, div, body, footer, h1, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    border: 3px solid #B66D31;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: #F79646;
+    width: 911px;
+    min-height: 667px;
+    /*margin: 30px auto;*/
+    margin: 28px 0 0 185px;
+}
+
+    header {
+        background: #FAC090;
+        text-align: center;
+        border-bottom: 3px solid #B66D31;
+        padding: 10px;
+    }
+
+        header a {
+            float: right;
+            text-decoration: none;
+            color: #3B6291;
+            border-bottom: 2px dotted #3B6291;
+            margin-right: 10px;
+            font-size: 1.45rem;
+        }
+
+    footer {
+        color: white;
+        background: #E46C0A;
+        text-align: center;
+        border-top: 3px solid #B66D31;
+        padding: 14px;
+        font-size: 1.3rem;
+    }
+
+    #main {
+        min-height: 546px;
+        /*width: 100%;*/
+        /*margin-top: 42px;*/
+    }
+
+#status-container {
+    color: white;
+    background: #88A945;
+    border-radius: 5px;
+    border: 3px solid #5C732F;
+    /*margin: 0 auto;*/
+    width: 770px;
+    text-align: center;
+    padding: 0 15px;
+    position: absolute;
+    left: 238px;
+    top: 133px;
+    display: none;
+}
+
+    #status-close {
+        float: right;
+        display: inline-block;
+        border-left: 3px solid #5C732F;
+        color: #5C732F;
+        font-weight: bolder;
+        padding: 15px 5px 15px 20px;
+        cursor: pointer;
+    }
+
+    #status-message {
+        display: inline-block;
+        padding: 11px;
+        font-size: 1.35rem;
+    }
+
+form {
+    /*margin: 50px auto 0;*/
+    width: 365px;
+    height: 345px;
+    background: #FAC090;
+    border: 3px solid #B66D31;
+    border-radius: 16px;
+    padding: 15px 35px;
+    position: absolute;
+    top: 230px;
+    left: 420px;
+    box-shadow: 2px 2px 5px #B66D31;
+}
+
+    form > input, form > label {
+        display: block;
+        font-size: 1.4rem;
+    }
+
+    form > input {
+        padding: 10px 5px;
+        border: 3px solid #F79646;
+        width: 96%;
+    }
+
+    form > label {
+        margin: 15px 0 10px;
+    }
+
+    form > h1 {
+        font-size: 2rem;
+        border-bottom: 3px solid #B66D31;
+        padding: 7px;
+        text-align: center;
+    }
+
+    form > button {
+        border: 3px solid #B66D31;
+        border-radius: 10px;
+        padding: 10px 33px;
+        width: 155px;
+        margin-top: 20px;
+        color: white;
+        font-size: 1.35rem;
+        background: #F79646;
+        cursor: pointer;
+    }
+
+    form > a {
+        color: #446692;
+        font-size: 1.35rem;
+        text-decoration: none;
+        border-bottom: 2px dotted #446692;
+        float: right;
+        margin: 30px 10px 0 0;
+    }
+
+#login-header, #login-btn, #register-link {
+    display: none;
+}
+
+#bookmarks-container {
+    display: none;
+    margin-top: 115px;
+    padding: 0 22px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    /*overflow-y: scroll;*/
+    /*overflow-x: hidden;*/
+    /*max-height: 100%;*/
+}
+
+    #bookmarks-container > section {
+        /*position: relative;*/
+        background: #FAC090;
+        border: 3px solid #B66D31;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #B66D31;
+        display: inline-block;
+        width: 88%;
+        margin-top: 20px;
+        padding: 20px;
+        overflow-x: hidden;
+        word-wrap: break-word;
+        font-size: 1.35rem;
+        /*vertical-align: top;*/
+    }
+
+    #bookmarks-container > section > a {
+        text-decoration: none;
+        color: #3B6291;
+        border-bottom: 1px dotted #3B6291;
+    }
+
+.delete-btn {
+    /*position: relative;*/
+    /*top: 8px;*/
+    /*right: 8px;*/
+    float: right;
+    color: #C0504D;
+    border: 3px solid #C0504D;
+    border-radius: 5px;
+    background: #F18E6A;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#add-bookmark > h4 {
+    text-align: center;
+    border-bottom: 3px solid #B66D31;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+#add-bookmark > button {
+    cursor: pointer;
+    height: 93px;
+    width: 74px;
+    float: right;
+    border: 3px solid #B66D31;
+    border-radius: 10px;
+    color: white;
+    background: #F79646;
+    font-size: 1.3rem;
+}
+
+#add-bookmark > input {
+    border: 3px solid #F79646;
+    width: 213px;
+    padding: 6px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#add-bookmark > label {
+    font-size: 1.25rem;
+    display: inline-block;
+    width: 46px;
+}
+
