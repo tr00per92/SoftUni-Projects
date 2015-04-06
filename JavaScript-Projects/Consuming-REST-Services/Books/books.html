@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+    <link rel="stylesheet" href="books.css"/>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="scripts/ajax-requester.js"></script>
+    <script src="scripts/data-persister.js"></script>
+    <script src="scripts/controller.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Books</h1>
+    </header>
+    <div id="books"></div>
+    <div id="add-book-wrapper">
+        <input type="text" id="book-title" placeholder="Enter book title..."/><br>
+        <input type="text" id="book-author" placeholder="Enter book author..."/><br>
+        <input type="text" id="book-isbn" placeholder="Enter book isbn..."/><br>
+        <input type="text" id="book-tags" placeholder="Enter book tags..."/><br>
+        <button id="add-book-btn">Add Book</button>
+        <button id="save-book-btn">Save Book</button>
+    </div>
+</div>
+</body>
+</html>

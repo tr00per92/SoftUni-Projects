@@ -1,0 +1,12 @@
+#wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+li, input {
+    margin: 3px 0;
+}
+
+#edit-book-label, #save-edit-btn, #cancel-edit-btn {
+    display: none;
+}
