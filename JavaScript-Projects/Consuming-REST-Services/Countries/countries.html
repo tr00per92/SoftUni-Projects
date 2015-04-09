@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Countries And Towns</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="countries.js"></script>
+    <style>
+        #wrapper {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        #towns {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <h2>Countries</h2>
+    <ul id="countries"></ul>
+    <input type="text" id="new-country-name" placeholder="Enter country name..."/>
+    <button type="button" id="add-country">Add Country</button>
+    <div id="towns">
+        <h3>Towns</h3>
+        <ul></ul>
+        <input type="text" id="new-town-name" placeholder="Enter town name..."/>
+        <button type="button" id="add-town">Add Town</button>
+    </div>
+</div>
+</body>
+</html>
