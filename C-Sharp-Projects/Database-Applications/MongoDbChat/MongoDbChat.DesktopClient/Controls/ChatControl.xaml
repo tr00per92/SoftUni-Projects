@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="MongoDbChat.DesktopClient.Controls.ChatControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             xmlns:current="clr-namespace:MongoDbChat.DesktopClient.Controls"
+             d:DesignHeight="350" d:DesignWidth="350">
+
+    <StackPanel>
+        <ListBox Margin="5" MaxHeight="240" ItemsSource="{Binding Messages}"
+                 current:Extenders.AutoScrollToEnd="True">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" MaxWidth="300" TextWrapping="Wrap"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
+        <TextBlock TextAlignment="Center" Text="Enter Message: " />
+        <StackPanel Margin="5" Orientation="Horizontal">
+            <TextBox Margin="15, 0, 0, 0" Width="245" TextWrapping="Wrap" Focusable="True"
+                     Text="{Binding Message, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <Button Content="Send" Width="50" Height="26" IsDefault="True"
+                    Command="{Binding PostMessageCommand}" />
+        </StackPanel>
+    </StackPanel>
+</UserControl>

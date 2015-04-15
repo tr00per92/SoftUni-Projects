@@ -3,6 +3,7 @@
 *.[Cc]ache
 *.dat
 *.user
+*.DotSettings
 
 packages/
 .idea/

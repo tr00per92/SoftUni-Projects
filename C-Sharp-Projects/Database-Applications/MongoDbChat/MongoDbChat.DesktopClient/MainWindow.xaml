@@ -1,0 +1,22 @@
+﻿<Window x:Class="MongoDbChat.DesktopClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:MongoDbChat.DesktopClient.Controls"
+        xmlns:viewModels="clr-namespace:MongoDbChat.DesktopClient.ViewModels"
+        Title="Mongo Chat" Height="350" Width="350">
+
+    <Window.DataContext>
+        <viewModels:MainViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewModels:LoginViewModel}">
+            <controls:LoginControl />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:ChatViewModel}">
+            <controls:ChatControl />
+        </DataTemplate>
+    </Window.Resources>
+    
+    <ContentControl Content="{Binding CurrentViewModel}" />
+</Window>
