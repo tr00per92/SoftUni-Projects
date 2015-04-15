@@ -4,6 +4,7 @@
 *.dat
 *.user
 
+packages/
 .idea/
 out/
 [Bb]in/
