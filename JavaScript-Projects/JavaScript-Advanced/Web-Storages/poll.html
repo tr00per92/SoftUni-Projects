@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Poll</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="poll.js"></script>
+    <style>
+        #wrapper {
+            margin: 0 auto;
+            text-align: center;
+            width: 50%;
+        }
+        .answer {
+            display: none;
+            margin: 10px;
+        }
+        select {
+            margin: 10px;
+            width: 210px;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header><h2 id="timer">Remaining time</h2></header>
+    <section>
+        <label for="question0">For which of the following disciplines is Nobel Prize awarded?</label><br>
+        <select id="question0">
+            <option hidden selected> </option>
+            <option value="Physics and Chemistry">Physics and Chemistry</option>
+            <option value="Physiology or Medicine">Physiology or Medicine</option>
+            <option value="Literature, Peace and Economics">Literature, Peace and Economics</option>
+            <option value="All of the above">All of the above</option>
+        </select>
+        <article class="answer">All of the above</article>
+    </section>
+    <section>
+        <label for="question1">Galileo was an Italian astronomer who?</label><br>
+        <select id="question1">
+            <option hidden selected> </option>
+            <option value="Developed the telescope">Developed the telescope</option>
+            <option value="Discovered Jupiter">Discovered Jupiter</option>
+            <option value="Discovered America">Discovered America</option>
+            <option value="All of the above">All of the above</option>
+        </select>
+        <article class="answer">Developed the telescope</article>
+    </section>
+    <section>
+        <label for="question2">For galvanizing iron which of the following metals is used?</label><br>
+        <select id="question2">
+            <option hidden selected> </option>
+            <option value="Aluminium">Aluminium</option>
+            <option value="Lead">Lead</option>
+            <option value="Zinc">Zinc</option>
+            <option value="Copper">Copper</option>
+        </select>
+        <article class="answer">Zinc</article>
+    </section>
+    <section>
+        <label for="question3">The instrument used to measure electric current is?</label><br>
+        <select id="question3">
+            <option hidden selected> </option>
+            <option value="Ammeter">Ammeter</option>
+            <option value="Galvanometer">Galvanometer</option>
+            <option value="Spectrometer">Spectrometer</option>
+            <option value="Electrometer">Electrometer</option>
+        </select>
+        <article class="answer">Ammeter</article>
+    </section>
+    <button id="submit-btn">Submit</button>
+</div>
+</body>
+</html>
