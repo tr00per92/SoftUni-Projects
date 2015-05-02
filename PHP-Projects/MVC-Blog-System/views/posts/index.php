@@ -6,7 +6,7 @@
         by <strong><?= htmlspecialchars($this->currentPost['username']) ?></strong>
         <p>Tagged: <?= implode(', ', $this->tags) ?></p>
     </div>
-    <p class="panel-body"><?= htmlspecialchars($this->currentPost['text']) ?></p>
+    <p class="panel-body"><?= nl2br(htmlspecialchars($this->currentPost['text'])) ?></p>
 </div>
 
 <ul class="pager">

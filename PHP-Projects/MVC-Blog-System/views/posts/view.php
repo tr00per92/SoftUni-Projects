@@ -30,7 +30,7 @@
         <p>Visited: <strong><?= $this->currentPost['visits'] ?></strong> times</p>
         <p>Tagged: <?= implode(', ', $this->tags) ?></p>
     </div>
-    <p class="panel-body no-margin-bottom"><?= htmlspecialchars($this->currentPost['text']) ?></p>
+    <p class="panel-body no-margin-bottom"><?= nl2br(htmlspecialchars($this->currentPost['text'])) ?></p>
 </div>
 
 <div class="row panel panel-success">
