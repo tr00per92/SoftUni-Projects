@@ -1,0 +1,19 @@
+<a ng-href="#/">View All Videos</a>
+<form class="add-form" name="addForm" novalidate>
+    <span>The fields marked with * are required.</span><br />
+    <label for="title">Title: </label><br />
+    <input type="text" ng-model="newVideo.title" id="title" required />*<br />
+    <label for="duration">Duration: </label><br />
+    <input type="time" ng-model="newVideo.length" id="duration" /><br />
+    <label for="picture">Picture Url: </label><br />
+    <input type="url" ng-model="newVideo.pictureUrl" id="picture" required />*<br />
+    <label for="category">Category: </label><br />
+    <input type="text" ng-model="newVideo.category" id="category" required />*<br />
+    <label for="subscribers">Subscribers: </label><br />
+    <input type="number" ng-model="newVideo.subscribers" id="subscribers" /><br />
+    <label for="date">Date: </label><br />
+    <input type="date" ng-model="newVideo.date" id="date" /><br />
+    <label for="subtitles">Subtitles: </label>
+    <input type="checkbox" id="subtitles" ng-model="newVideo.haveSubtitles"><br />
+    <button type="button" ng-disabled="addForm.$invalid" ng-click="addVideo()">Add</button>
+</form>

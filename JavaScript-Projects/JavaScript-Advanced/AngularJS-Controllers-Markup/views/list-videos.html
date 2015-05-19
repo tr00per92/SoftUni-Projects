@@ -1,0 +1,39 @@
+<a ng-href="#/add">Add New Video</a>
+<label for="orderBy">Order By: </label>
+<select id="orderBy" ng-model="orderByProp">
+    <option value="title">Title</option>
+    <option value="length">Length</option>
+    <option value="date">Date</option>
+    <option value="subscribers">Likes</option>
+</select>
+<label for="filter">Filter: </label>
+<input type="text" id="filter" placeholder="Title..." ng-model="searchFilter.title" />
+<label for="subtitles">Subtitles: </label>
+<select id="subtitles" ng-model="searchFilter.haveSubtitles">
+    <option value="">Any</option>
+    <option value="true">Yes</option>
+    <option value="false">No</option>
+</select>
+<div ng-repeat="video in videos | orderBy: orderByProp | filter: searchFilter" class="video-div">
+    <table>
+        <tr>
+            <th>{{video.title}}</th>
+        </tr>
+        <tr>
+            <td><strong>Length:</strong> {{video.length}}</td>
+            <td rowspan="5"><img ng-src="{{video.pictureUrl}}" /></td>
+        </tr>
+        <tr>
+            <td><strong>Category:</strong> {{video.category}}</td>
+        </tr>
+        <tr>
+            <td><strong>Subscribers count:</strong> {{video.subscribers}}</td>
+        </tr>
+        <tr>
+            <td><strong>Date:</strong> {{video.date | date:'dd MMM yyyy'}}</td>
+        </tr>
+        <tr>
+            <td><strong>Subtitles:</strong> {{video.haveSubtitles ? 'Yes' : 'No'}}</td>
+        </tr>
+    </table>
+</div>

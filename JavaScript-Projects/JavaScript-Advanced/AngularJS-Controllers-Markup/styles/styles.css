@@ -1,0 +1,19 @@
+.add-form, .video-div {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+img {
+    max-width: 150px;
+    margin-left: 20px;
+}
+
+button {
+    cursor: pointer;
+    padding: 3px 7px;
+}
+
+input.ng-dirty.ng-invalid {
+    background: #FA787E;
+}
