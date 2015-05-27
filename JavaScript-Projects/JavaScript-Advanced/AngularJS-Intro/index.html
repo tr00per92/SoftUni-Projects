@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to AngularJS</title>
+    <script src="libs/angular.js"></script>
+    <script src="app.js" defer></script>
+    <script src="controllers/StudentPageCtrl.js" defer></script>
+    <script src="controllers/TigerCtrl.js" defer></script>
+</head>
+<body>
+<main ng-app="angularIntro">
+    <div ng-controller="StudentPageCtrl">
+        <ul>
+            <li ng-repeat="(key, val) in student">
+                {{key}} - {{val}}
+            </li>
+        </ul>
+        <img ng-src="{{student.photo}}" alt="photo"/>
+    </div>
+
+    <div>
+        <input type="text" ng-model="imageSource" placeholder="Enter image link..." />
+        <br />
+        <img ng-src="{{imageSource}}" />
+    </div>
+
+    <div ng-controller="TigerCtrl" ng-style="commonStyle">
+        <div ng-style="infoStyle">
+            <h2>TIGER</h2>
+            <p><strong>Name:</strong> {{tiger.Name}}</p>
+            <p><strong>Born:</strong> {{tiger.Born}}</p>
+            <p><strong>Birth date:</strong> {{tiger.BirthDate}}</p>
+            <p><strong>Live:</strong> {{tiger.Live}}</p>
+        </div>
+        <img ng-src="{{tiger.Photo}}" ng-style="imgStyle" />
+    </div>
+</main>
+</body>
+</html>
