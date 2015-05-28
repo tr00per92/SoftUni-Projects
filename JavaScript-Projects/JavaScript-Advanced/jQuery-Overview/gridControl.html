@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Control</title>
+    <style>
+        input, button {
+            margin-bottom: 10px;
+        }
+        th {
+            background: cyan;
+        }
+        td, th {
+            padding: 5px;
+            min-width: 140px;
+            height: 15px;
+        }
+        table, td, th {
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="gridControl.js"></script>
+</head>
+<body>
+    <h1>Grid Control</h1>
+    <div id="grid-controls">
+        <input type="text" placeholder="Col 1 content"/>
+        <input type="text" placeholder="Col 2 content"/>
+        <input type="text" placeholder="Col 3 content"/>
+        <input type="text" placeholder="Col 4 content"/><br>
+        <button type="button">Set Header</button>
+        <button type="button">Add Row</button>
+        <button type="button">Add New Grid</button>
+        <table></table>
+    </div>
+</body>
+</html>
