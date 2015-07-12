@@ -1,0 +1,40 @@
+﻿<ul class="nav navbar-nav navbar-right">
+    @if (User.IsLoggedIn())
+    {
+        if (User.IsAdmin())
+        {
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administration <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li>@Html.ActionLink("Tweets", "Index", "Tweets", new {area = "Administration"}, null)</li>
+                    <li>@Html.ActionLink("Notifications", "Index", "Notifications", new {area = "Administration"}, null)</li>
+                    <li>@Html.ActionLink("Users", "Index", "Users", new {area = "Administration"}, null)</li>
+                    <li>@Html.ActionLink("User roles", "Index", "Roles", new {area = "Administration"}, null)</li>
+                </ul>
+            </li>
+        }
+        else
+        {
+            <li>
+                <a href="@Url.Action("Index", "Notifications", new { area = string.Empty })">
+                    Notifications (<span id='notifications-count'>@Html.Action("NotificationsCount", "Notifications", new { area = string.Empty })</span>)
+                </a>
+            </li>
+        }
+        <li>
+            @Html.ActionLink("Change Password", "ChangePassword", "Manage", new { area = string.Empty }, null)
+        </li>
+        <li>
+            <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+            @using (Html.BeginForm("LogOff", "Account", new {area = string.Empty}, FormMethod.Post, new {id = "logoutForm"}))
+            {
+                @Html.AntiForgeryToken()
+            }
+        </li>
+    }
+    else
+    {
+        <li>@Html.ActionLink("Register", "Register", "Account", new { area = string.Empty }, new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Log in", "Login", "Account", new { area = string.Empty }, new { id = "loginLink" })</li>
+    }
+</ul>

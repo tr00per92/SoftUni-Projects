@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "User roles";
+}
+
+@(Html.Infragistics()
+    .Grid<Twitter.Web.Areas.Administration.ViewModels.RoleAdministrationViewModel>()
+    .AutoGenerateColumns(false)
+    .ID("rolesGrid")
+    .PrimaryKey("Id")
+    .Columns(column =>
+    {
+        column.For(x => x.Id).HeaderText("ID");
+        column.For(x => x.Name).HeaderText("Name");
+    })
+    .Features(feature =>
+    {
+        feature.Paging().PageSize(10).Type(OpType.Remote);
+        feature.Filtering().Type(OpType.Remote);
+        feature.Sorting().Type(OpType.Remote);
+        feature.Updating()
+            .ColumnSettings(cs =>
+            {
+                cs.ColumnSetting().ColumnKey("Id").ReadOnly(true);
+                cs.ColumnSetting().ColumnKey("Name").Required(true);
+            })
+            .EditMode(GridEditMode.Row)
+            .EnableDeleteRow(true)
+            .EnableAddRow(true)
+            .StartEditTriggers(GridStartEditTriggers.DblClick)
+            .DoneLabel("Submit");
+    })
+    .DataSourceUrl(Url.Action("Index"))
+    .UpdateUrl(Url.Action("Update"))
+    .DataBind()
+    .Render()
+)
+
+<br />
+@Html.BootstrapSubmitButton("Save changes", new { onclick = "$('#rolesGrid').igGrid('saveChanges');" })

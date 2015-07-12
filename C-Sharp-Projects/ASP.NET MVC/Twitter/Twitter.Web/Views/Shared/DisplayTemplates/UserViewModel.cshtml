@@ -1,0 +1,3 @@
+﻿@model Twitter.Web.ViewModels.User.UserViewModel
+
+@Html.ActionLink(Model.UserName, "Profile", "User", new { username = Model.UserName, area = string.Empty }, null)

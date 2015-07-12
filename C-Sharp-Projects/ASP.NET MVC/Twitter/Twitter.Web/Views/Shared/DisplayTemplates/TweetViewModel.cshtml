@@ -1,0 +1,52 @@
+﻿@model Twitter.Web.ViewModels.Tweets.TweetViewModel
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        @Html.ActionLink(Model.Username, "Profile", "User", new { username = Model.Username, area = string.Empty }, new { @class = "inherit-color" }) 
+        tweeted at @Model.TweetedAt.ToString("HH:mm:ss dd.MM.yyyy")
+    </div>
+    <div class="panel-body">
+        @Model.Text
+    </div>
+    @if (User.IsLoggedIn() && Model.Username != User.GetUsername())
+    {
+        <div class="panel-footer">
+            @if (Model.IsFavouriteToCurrentUser)
+            {
+                using (Ajax.BeginForm("RemoveFavouriteTweet", "Tweets", new { id = Model.Id },
+                    new AjaxOptions { HttpMethod = "POST" }, new { id = "remove-favourite-form-" + Model.Id, @class = "inline" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <a href="#" onclick="$('#remove-favourite-form-' + @Model.Id).submit(); $(this).fadeOut();" data-ajax="true">
+                        [remove from favourites]
+                    </a>
+                }
+            }
+            else
+            {
+                using (Ajax.BeginForm("AddFavouriteTweet", "Tweets", new { id = Model.Id },
+                    new AjaxOptions { HttpMethod = "POST" }, new { id = "add-favourite-form-" + Model.Id, @class = "inline" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <a href="#" onclick="$('#add-favourite-form-' + @Model.Id).submit(); $(this).fadeOut();" data-ajax="true">
+                        [add to favourites]
+                    </a>
+                }
+            }
+
+            @using (Ajax.BeginForm("Retweet", "Tweets", new { id = Model.Id },
+                new AjaxOptions {  HttpMethod = "POST", UpdateTargetId = "tweet-content-" + Model.Id, InsertionMode = InsertionMode.Replace },
+                new { id = "retweet-form-" + Model.Id, @class = "inline" }))
+            {
+                @Html.AntiForgeryToken()
+                <a href="#" onclick="$('#retweet-form-' + @Model.Id).submit();" data-ajax="true">[retweet]</a>
+            }
+
+            @Ajax.ActionLink("[report]", "ShowReportForm", "Tweets", new { id = Model.Id },
+                new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "tweet-content-" + Model.Id, 
+                    InsertionMode = InsertionMode.Replace, OnSuccess = "validatorParse" })
+
+            <div id="tweet-content-@Model.Id"></div>
+        </div>
+    }
+</div>

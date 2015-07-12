@@ -1,0 +1,25 @@
+﻿@model Twitter.Web.ViewModels.User.UserViewModel
+
+@if (!Model.IsCurrentUser)
+{
+    <h4 class="text-center follow-link col-md-8 col-md-offset-2">
+        @if (Model.IsFollowedByCurrentUser)
+        {
+            using (Ajax.BeginForm("UnfollowUser", "User", new { username = Model.UserName }, 
+                 new AjaxOptions { HttpMethod = "POST" }, new { id = "unfollow-form" }))
+            {
+                @Html.AntiForgeryToken()
+                <a href="#" onclick="$('#unfollow-form').submit(); $(this).fadeOut();" data-ajax="true">[unfollow]</a>
+            }
+        }
+        else
+        {
+            using (Ajax.BeginForm("FollowUser", "User", new { username = Model.UserName },
+                 new AjaxOptions { HttpMethod = "POST" }, new { id = "follow-form" }))
+            {
+                @Html.AntiForgeryToken()
+                <a href="#" onclick="$('#follow-form').submit(); $(this).fadeOut();" data-ajax="true">[follow]</a>
+            }
+        }
+    </h4>
+}

@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Tweets";
+}
+
+@(Html.Infragistics()
+    .Grid<Twitter.Web.Areas.Administration.ViewModels.TweetAdministrationViewModel>()
+    .AutoGenerateColumns(false)
+    .ID("tweetsGrid")
+    .PrimaryKey("Id")
+    .Width("100%")
+    .Columns(column =>
+    {
+        column.For(x => x.Id).HeaderText("ID").Width("13%");
+        column.For(x => x.Text).HeaderText("Text").Width("37%");
+        column.For(x => x.TweetedAt).HeaderText("Tweeted at").Width("25%").Format("dd.MM.yyyy HH:mm:ss");
+        column.For(x => x.Username).HeaderText("Tweeted by").Width("25%");
+    })
+    .Features(feature =>
+    {
+        feature.Paging().PageSize(10).Type(OpType.Remote);
+        feature.Filtering().Type(OpType.Remote);
+        feature.Sorting().Type(OpType.Remote);
+        feature.Updating()
+            .ColumnSettings(cs =>
+            {
+                cs.ColumnSetting().ColumnKey("Id").ReadOnly(true);
+                cs.ColumnSetting().ColumnKey("Text").Required(true);
+                cs.ColumnSetting().ColumnKey("TweetedAt").ReadOnly(true);
+                cs.ColumnSetting().ColumnKey("Username").ReadOnly(true);
+            })
+            .EditMode(GridEditMode.Row)
+            .EnableDeleteRow(true)
+            .EnableAddRow(false)
+            .StartEditTriggers(GridStartEditTriggers.DblClick)
+            .DoneLabel("Submit");
+    })
+    .DataSourceUrl(Url.Action("Index"))
+    .UpdateUrl(Url.Action("Update"))
+    .DataBind()
+    .Render()
+)
+
+<br />
+@Html.BootstrapSubmitButton("Save changes", new { onclick = "$('#tweetsGrid').igGrid('saveChanges');" })

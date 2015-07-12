@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Notifications";
+}
+
+@(Html.Infragistics()
+    .Grid<Twitter.Web.Areas.Administration.ViewModels.NotificationAdministrationViewModel>()
+    .AutoGenerateColumns(false)
+    .ID("notificationsGrid")
+    .PrimaryKey("Id")
+    .Width("100%")
+    .Columns(column =>
+    {
+        column.For(x => x.Id).HeaderText("ID").Width("8%");
+        column.For(x => x.Type).HeaderText("Type").Width("15%");
+        column.For(x => x.IsRead).HeaderText("Is read").Width("8%");
+        column.For(x => x.Text).HeaderText("Text").Width("29%");
+        column.For(x => x.NotificationTime).HeaderText("Appeared at").Width("20%").Format("dd.MM.yyyy HH:mm:ss");
+        column.For(x => x.Username).HeaderText("User").Width("20%");
+    })
+    .Features(feature =>
+    {
+        feature.Paging().PageSize(10).Type(OpType.Remote);
+        feature.Filtering().Type(OpType.Remote);
+        feature.Sorting().Type(OpType.Remote);
+        feature.Updating()
+            .ColumnSettings(cs =>
+            {
+                cs.ColumnSetting().ColumnKey("Id").ReadOnly(true);
+                cs.ColumnSetting().ColumnKey("Type").ReadOnly(true);
+                cs.ColumnSetting().ColumnKey("IsRead").Required(true);
+                cs.ColumnSetting().ColumnKey("Text").Required(true);
+                cs.ColumnSetting().ColumnKey("NotificationTime").ReadOnly(true);
+                cs.ColumnSetting().ColumnKey("Username").ReadOnly(true);
+            })
+            .EditMode(GridEditMode.Row)
+            .EnableDeleteRow(true)
+            .EnableAddRow(false)
+            .StartEditTriggers(GridStartEditTriggers.DblClick)
+            .DoneLabel("Submit");
+    })
+    .DataSourceUrl(Url.Action("Index"))
+    .UpdateUrl(Url.Action("Update"))
+    .DataBind()
+    .Render()
+)
+
+<br />
+@Html.BootstrapSubmitButton("Save changes", new { onclick = "$('#notificationsGrid').igGrid('saveChanges');" })

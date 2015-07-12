@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Users";
+}
+
+@(Html.Infragistics()
+    .Grid<Twitter.Web.Areas.Administration.ViewModels.UserAdministrationViewModel>()
+    .AutoGenerateColumns(false)
+    .ID("usersGrid")
+    .PrimaryKey("Id")
+    .Columns(column =>
+    {
+        column.For(x => x.Id).HeaderText("ID");
+        column.For(x => x.UserName).HeaderText("Username");
+        column.For(x => x.Email).HeaderText("Email");
+    })
+    .Features(feature =>
+    {
+        feature.Paging().PageSize(10).Type(OpType.Remote);
+        feature.Filtering().Type(OpType.Remote);
+        feature.Sorting().Type(OpType.Remote);
+        feature.Updating()
+            .ColumnSettings(cs =>
+            {
+                cs.ColumnSetting().ColumnKey("Id").ReadOnly(true);
+                cs.ColumnSetting().ColumnKey("UserName").Required(true);
+                cs.ColumnSetting().ColumnKey("Email").Required(true);
+            })
+            .EditMode(GridEditMode.Row)
+            .EnableDeleteRow(false)
+            .EnableAddRow(false)
+            .StartEditTriggers(GridStartEditTriggers.DblClick)
+            .DoneLabel("Submit");
+    })
+    .DataSourceUrl(Url.Action("Index"))
+    .UpdateUrl(Url.Action("Update"))
+    .DataBind()
+    .Render()
+)
+
+<br />
+@Html.BootstrapSubmitButton("Save changes", new { onclick = "$('#usersGrid').igGrid('saveChanges');" })
