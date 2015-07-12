@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Bookmarks.Web.ViewModels.BookmarkPreviewViewModel>
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="jumbotron">
+    <h1 class="text-center">Bookmarks</h1>
+</div>
+
+<h1 class="text-center">Top Bookmarks</h1>
+<div class="row">
+    @Html.DisplayForModel()
+</div>

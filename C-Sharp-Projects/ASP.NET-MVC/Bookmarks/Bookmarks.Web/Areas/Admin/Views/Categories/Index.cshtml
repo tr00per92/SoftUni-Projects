@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Categories Administration";
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+
+@(Html.Kendo().Grid<Bookmarks.Web.Areas.Admin.ViewModels.CategoryAdminViewModel>()
+    .Name("CategoriesGrid")
+    .Columns(columns =>
+    {
+        columns.Bound(x => x.Id).Hidden();
+        columns.Bound(x => x.Name);
+        columns.Command(command => command.Edit().Text("Edit").UpdateText("Save").CancelText("Cancel"));
+        columns.Command(command => command.Destroy().Text("Delete"));
+    })
+    .ToolBar(toolbar =>
+    {
+        toolbar.Create().Text("Create");
+    })
+    .Editable(editable =>
+    {
+        editable.Mode(GridEditMode.PopUp);
+        editable.Window(x => x.Title("Categories"));
+        editable.DisplayDeleteConfirmation("Are you sure you want to delete this category?");
+    })
+    .DataSource(x => x.Ajax()
+        .ServerOperation(true)
+        .Model(m => m.Id(z => z.Id))
+        .Read(read => read.Action("Read", "Categories"))
+        .Create(create => create.Action("Create", "Categories"))
+        .Update(update => update.Action("Update", "Categories"))
+        .Destroy(destroy => destroy.Action("Delete", "Categories"))
+        .Events(e => e.Error("onError"))
+    )
+    .Events(e => e.Edit("hideIdField"))
+    .Deferred()
+)
+
+@section scripts {
+    @Scripts.Render("~/bundles/kendo")
+    @Html.Kendo().DeferredScripts()
+    <script>
+        function hideIdField() {
+            $('#Id, label[for="Id"]').remove();
+        }
+        function onError(data) {
+            $('#CategoriesGrid').data('kendoGrid').cancelChanges();
+            if (data.errors && data.errors.Category && data.errors.Category.errors) {
+                alert(data.errors.Category.errors[0]);
+            }
+        }
+    </script>
+}
+
+@section styles {
+    @Styles.Render("~/Content/kendo")
+    <style>
+        input {
+            color: black;
+        }
+    </style>
+}

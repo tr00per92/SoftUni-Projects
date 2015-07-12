@@ -1,0 +1,10 @@
+﻿@model Bookmarks.Web.ViewModels.BookmarkPreviewViewModel
+
+<div class="col-md-4">
+    <h3>@Model.Title</h3>
+    <p>@Model.Description</p>
+    @if (User.IsLoggedIn())
+    {
+        @Html.ActionLink("Details", "Details", "Bookmarks", new { id = Model.Id }, new { @class = "btn btn-default" })
+    }
+</div>
