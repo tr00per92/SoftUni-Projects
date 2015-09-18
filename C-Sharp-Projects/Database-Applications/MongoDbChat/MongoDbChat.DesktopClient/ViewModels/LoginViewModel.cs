@@ -3,7 +3,7 @@
     using System;
     using Microsoft.Practices.Prism.Commands;
 
-    public class LoginViewModel : ViewModel
+    public class LoginViewModel : ViewModelBase
     {
         public event EventHandler LoggedIn;
 

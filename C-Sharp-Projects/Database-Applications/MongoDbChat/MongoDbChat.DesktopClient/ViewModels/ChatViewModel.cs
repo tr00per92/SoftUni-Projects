@@ -7,7 +7,7 @@
     using Microsoft.Practices.Prism.Commands;
     using MongoDbChat.Data;
 
-    public class ChatViewModel : ViewModel
+    public class ChatViewModel : ViewModelBase
     {
         private readonly MongoDbContext mongoDbContext;
 

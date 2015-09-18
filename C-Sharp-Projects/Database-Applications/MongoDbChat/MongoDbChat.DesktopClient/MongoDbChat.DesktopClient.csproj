@@ -79,7 +79,7 @@
     </ApplicationDefinition>
     <Compile Include="Controls\Extenders.cs" />
     <Compile Include="Properties\Annotations.cs" />
-    <Compile Include="ViewModels\ViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Page Include="Controls\ChatControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

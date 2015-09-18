@@ -6,7 +6,7 @@
 
     public class ConsoleClient
     {
-        private static readonly MongoDbContext MongoDbContext = new MongoDbContext();
+        private static readonly MongoDbContext mongoDbContext = new MongoDbContext();
         private static string username;
 
         public static void Main()
@@ -22,7 +22,7 @@
         {
             while (true)
             {
-                MongoDbContext.AddMessage(new Message
+                mongoDbContext.AddMessage(new Message
                 {
                     Text = Console.ReadLine(),
                     Username = username,
@@ -33,7 +33,7 @@
 
         private async static void PrintMessages()
         {
-            var messages = await MongoDbContext.GetMessagesAsync();
+            var messages = await mongoDbContext.GetMessagesAsync();
             Console.Clear();
             Console.WriteLine(string.Join(Environment.NewLine, messages));
             Console.Write("Enter message: ");
@@ -48,7 +48,7 @@
 
         private static async void UpdateMessages(object sender, EventArgs eventArgs)
         {
-            if (await MongoDbContext.HasNewMessagesAsync())
+            if (await mongoDbContext.HasNewMessagesAsync())
             {
                 PrintMessages();
             }

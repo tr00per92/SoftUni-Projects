@@ -1,6 +1,6 @@
 ﻿namespace MongoDbChat.DesktopClient.ViewModels
 {
-    public class MainViewModel : ViewModel
+    public class MainViewModel : ViewModelBase
     {
         public MainViewModel()
         {
@@ -14,6 +14,6 @@
             this.CurrentViewModel = loginViewModel;
         }
 
-        public ViewModel CurrentViewModel { get; set; }
+        public ViewModelBase CurrentViewModel { get; set; }
     }
 }

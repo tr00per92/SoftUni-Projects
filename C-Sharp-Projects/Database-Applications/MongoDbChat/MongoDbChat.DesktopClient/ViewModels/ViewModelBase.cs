@@ -2,7 +2,7 @@
 {
     using System.ComponentModel;
 
-    public class ViewModel : INotifyPropertyChanged
+    public abstract class ViewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

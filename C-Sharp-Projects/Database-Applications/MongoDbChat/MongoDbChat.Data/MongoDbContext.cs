@@ -26,17 +26,17 @@
 
         public Task<IQueryable<Message>> GetMessagesAsync(DateTime startDate, DateTime endDate)
         {
-            return Task.Factory.StartNew(() => this.messages.AsQueryable().Where(m => m.Date >= startDate && m.Date <= endDate));
+            return Task.Run(() => this.messages.AsQueryable().Where(m => m.Date >= startDate && m.Date <= endDate));
         }
 
         public Task<IQueryable<Message>> GetMessagesAsync()
         {
-            return Task.Factory.StartNew(() => this.messages.AsQueryable());
+            return Task.Run(() => this.messages.AsQueryable());
         }
         
         public Task<bool> HasNewMessagesAsync()
         {
-            return Task.Factory.StartNew(() =>
+            return Task.Run(() =>
             {
                 var newCount = this.messages.Count();
                 if (newCount == this.messagesCount)

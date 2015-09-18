@@ -23,7 +23,7 @@
         {
             var listBox = (ListBox)listbox;
             var listBoxItems = listBox.Items;
-            var data = listBoxItems.SourceCollection as INotifyCollectionChanged;
+            var data = (INotifyCollectionChanged)listBoxItems.SourceCollection;
             var scrollToEndHandler = new NotifyCollectionChangedEventHandler((x, y) =>
             {
                 if (listBox.Items.Count > 0)
