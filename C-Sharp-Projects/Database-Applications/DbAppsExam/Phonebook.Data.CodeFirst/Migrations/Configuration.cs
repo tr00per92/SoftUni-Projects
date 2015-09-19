@@ -25,8 +25,8 @@ namespace Phonebook.Data.CodeFirst.Migrations
                 Company = "Smart Ideas",
                 Emails =  new[]
                 {
-                    new Email { EmailAddress = "peter@gmail.com"},
-                    new Email { EmailAddress = "peter_ivanov@yahoo.com"}
+                    new Email { EmailAddress = "peter@gmail.com" },
+                    new Email { EmailAddress = "peter_ivanov@yahoo.com" }
                 },
                 Phones = new[]
                 {
