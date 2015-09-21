@@ -2,9 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-
-    using WarMachines.Interfaces;
+    using Interfaces;
 
     public class Command : ICommand
     {
@@ -29,7 +27,7 @@
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentNullException("Name cannot be null or empty.");
+                    throw new ArgumentNullException("Name", "Name cannot be null or empty.");
                 }
 
                 this.name = value;
@@ -47,7 +45,7 @@
             {
                 if (value == null)
                 {
-                    throw new ArgumentNullException("List of strings cannot be null.");
+                    throw new ArgumentNullException("Parameters", "List of strings cannot be null.");
                 }
 
                 this.parameters = value;

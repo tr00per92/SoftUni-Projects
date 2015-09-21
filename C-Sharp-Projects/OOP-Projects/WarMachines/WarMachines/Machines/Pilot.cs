@@ -1,8 +1,7 @@
 ﻿namespace WarMachines.Machines
 {
-    using System.Text;
     using System.Collections.Generic;
-
+    using System.Text;
     using Interfaces;
 
     public class Pilot : IPilot
@@ -24,7 +23,7 @@
 
         public string Report()
         {
-            StringBuilder result = new StringBuilder();
+            var result = new StringBuilder();
             result.AppendFormat("{0} - {1} {2}",
                 this.Name,
                 this.Machines.Count == 0 ? "no" : this.Machines.Count.ToString(),

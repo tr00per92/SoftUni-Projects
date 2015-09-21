@@ -21,8 +21,7 @@
 
         public override string ToString()
         {
-            return base.ToString() +
-                string.Format("\n *Stealth: {0}", this.StealthMode ? "ON" : "OFF").TrimEnd();
+            return base.ToString() + string.Format("\n *Stealth: {0}", this.StealthMode ? "ON" : "OFF").TrimEnd();
         }
     }
 }

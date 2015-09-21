@@ -24,11 +24,11 @@
         private const string InvalidAttackTarget = "Tank {0} cannot attack stealth fighter {1}";
         private const string AttackSuccessful = "Machine {0} was attacked by machine {1} - current health: {2}";
 
-        private static readonly WarMachineEngine SingleInstance = new WarMachineEngine();
+        private static readonly WarMachineEngine singleInstance = new WarMachineEngine();
 
-        private IMachineFactory factory;
-        private IDictionary<string, IPilot> pilots;
-        private IDictionary<string, IMachine> machines;
+        private readonly IMachineFactory factory;
+        private readonly IDictionary<string, IPilot> pilots;
+        private readonly IDictionary<string, IMachine> machines;
 
         private WarMachineEngine()
         {
@@ -41,18 +41,18 @@
         {
             get
             {
-                return SingleInstance;
+                return singleInstance;
             }
         }
 
         public void Start()
         {
-            var commands = this.ReadCommands();
+            var commands = ReadCommands();
             var commandResult = this.ProcessCommands(commands);
-            this.PrintReports(commandResult);
+            PrintReports(commandResult);
         }
 
-        private IList<ICommand> ReadCommands()
+        private static IEnumerable<ICommand> ReadCommands()
         {
             var commands = new List<ICommand>();
 
@@ -69,7 +69,19 @@
             return commands;
         }
 
-        private IList<string> ProcessCommands(IList<ICommand> commands)
+        private static void PrintReports(IEnumerable<string> reports)
+        {
+            var output = new StringBuilder();
+
+            foreach (var report in reports)
+            {
+                output.AppendLine(report);
+            }
+
+            Console.Write(output.ToString());
+        }
+
+        private IEnumerable<string> ProcessCommands(IEnumerable<ICommand> commands)
         {
             var reports = new List<string>();
 
@@ -143,18 +155,6 @@
             return reports;
         }
 
-        private void PrintReports(IList<string> reports)
-        {
-            var output = new StringBuilder();
-
-            foreach (var report in reports)
-            {
-                output.AppendLine(report);
-            }
-
-            Console.Write(output.ToString());
-        }
-
         private string HirePilot(string name)
         {
             if (this.pilots.ContainsKey(name))
@@ -191,7 +191,7 @@
             var fighter = this.factory.ManufactureFighter(name, attackPoints, defensePoints, stealthMode);
             this.machines.Add(name, fighter);
 
-            return string.Format(FighterManufactured, name, attackPoints, defensePoints, stealthMode == true ? "ON" : "OFF");
+            return string.Format(FighterManufactured, name, attackPoints, defensePoints, stealthMode ? "ON" : "OFF");
         }
 
         private string EngageMachine(string selectedPilotName, string selectedMachineName)
@@ -235,7 +235,8 @@
             var attackingMachine = this.machines[attackingMachineName];
             var defendingMachine = this.machines[defendingMachineName];
 
-            if (attackingMachine is ITank && defendingMachine is IFighter && (defendingMachine as IFighter).StealthMode)
+            var defendingMachineAsFighter = defendingMachine as IFighter;
+            if (attackingMachine is ITank && defendingMachineAsFighter != null && defendingMachineAsFighter.StealthMode)
             {
                 return string.Format(InvalidAttackTarget, attackingMachineName, defendingMachineName);
             }
@@ -284,7 +285,7 @@
                 return string.Format(InvalidMachineOperation, stealthModeFighterName);
             }
 
-            var machineAsFighter = this.machines[stealthModeFighterName] as IFighter;
+            var machineAsFighter = (IFighter)this.machines[stealthModeFighterName];
             machineAsFighter.ToggleStealthMode();
 
             return string.Format(FighterOperationSuccessful, stealthModeFighterName);
@@ -302,7 +303,7 @@
                 return string.Format(InvalidMachineOperation, defenseModeTankName);
             }
 
-            var machineAsFighter = this.machines[defenseModeTankName] as ITank;
+            var machineAsFighter = (ITank)this.machines[defenseModeTankName];
             machineAsFighter.ToggleDefenseMode();
 
             return string.Format(TankOperationSuccessful, defenseModeTankName);

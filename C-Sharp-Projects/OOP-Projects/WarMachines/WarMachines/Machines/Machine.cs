@@ -1,7 +1,6 @@
 ﻿namespace WarMachines.Machines
 {
     using System.Collections.Generic;
-
     using Interfaces;
 
     public abstract class Machine : IMachine
@@ -34,7 +33,7 @@
 
         public override string ToString()
         {
-            string result = string.Format("- {0}\n *Type: {1}\n *Health: {2}\n *Attack: {3}\n *Defense: {4}\n *Targets: {5}",
+            var result = string.Format("- {0}\n *Type: {1}\n *Health: {2}\n *Attack: {3}\n *Defense: {4}\n *Targets: {5}",
                 this.Name,
                 this.GetType().Name,
                 this.HealthPoints,

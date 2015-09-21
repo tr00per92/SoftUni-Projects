@@ -32,8 +32,7 @@
 
         public override string ToString()
         {
-            return base.ToString() +
-                string.Format("\n *Defense: {0}", this.DefenseMode ? "ON" : "OFF").TrimEnd();
+            return base.ToString() + string.Format("\n *Defense: {0}", this.DefenseMode ? "ON" : "OFF").TrimEnd();
         }
     }
 }
