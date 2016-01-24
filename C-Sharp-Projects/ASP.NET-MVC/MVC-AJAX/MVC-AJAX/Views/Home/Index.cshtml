@@ -1,0 +1,52 @@
+﻿@model IEnumerable<string>
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>People info</h2>
+        @foreach (var name in Model)
+        {
+            <p>@Html.ActionLink(name, null, null, new { @class = "person-name" })</p>
+        }
+    </div>
+    <div class="col-md-6">
+        <h2>Search towns</h2>
+        <p>
+            <label for="town">Town: </label>
+            <input type="text" class="form-control" id="town" name="town"/>
+        </p>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script>
+        $(document).tooltip({
+            items: '.person-name',
+            track: true,
+            content: function (callback) {
+                $.getJSON('/Home/GetPersonData', { name: $(this).text() }, function (data) {
+                    var info = '<img style="float: left" src="' + data.ImageLink + '"/>' + data.Name +
+                        '<br/>Age: ' + data.Age + '<br/>Email: ' + data.Email + '<br/>Phone: ' + data.PhoneNumber;
+                    callback(info);
+                });
+            }
+        });
+
+        $('#town').autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: '/Home/AutoCompleteTown',
+                    data: { input: request.term },
+                    success: function (data) {
+                        response($.map(data, function (town) {
+                            return { label: town.Name, value: town.Name };
+                        }));
+                    }
+                });
+            }
+        });
+    </script>
+}
