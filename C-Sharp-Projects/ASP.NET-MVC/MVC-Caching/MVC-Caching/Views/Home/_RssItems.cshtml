@@ -1,0 +1,6 @@
+﻿@model IEnumerable<MVC_Caching.Models.RssItemViewModel>
+           
+@foreach (var item in Model)
+{
+    <p><a href="@item.Link">@item.Title</a></p>
+}
