@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Plugins Demo</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="treeView.js"></script>
+    <script src="messageBox.js"></script>
+    <script src="demos.js"></script>
+</head>
+<body>
+    <ul id="tree-container">
+        <li>
+            Item
+            <ul>
+                <li>Sub item</li>
+                <li>Sub item</li>
+            </ul>
+        </li>
+        <li>Item
+            <ul>
+                <li>Sub item</li>
+                <li>Sub item</li>
+            </ul></li>
+        <li>Item
+            <ul>
+                <li>
+                    Sub item
+                    <ul>
+                        <li>Sub sub item</li>
+                        <li>Sub sub item</li>
+                        <li>Sub sub item</li>
+                    </ul>
+                </li>
+                <li>Sub item</li>
+            </ul>
+        </li>
+        <li>Item<br>
+            <a href="#">Sub Item Link</a>
+        </li>
+    </ul>
+    <div id="message-box">
+        <button type="button" id="success-btn">Show Success</button>
+        <button type="button" id="error-btn">Show Error</button>
+    </div>
+</body>
+</html>
