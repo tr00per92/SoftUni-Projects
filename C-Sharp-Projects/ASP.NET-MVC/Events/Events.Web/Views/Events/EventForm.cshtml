@@ -1,0 +1,15 @@
+﻿@model Events.Web.Models.EventInputModel
+
+<h2>@ViewBag.Title</h2>
+<hr/>
+
+@Html.EditorForModel()
+
+@section styles {
+    @Styles.Render("~/Content/bootstrap-datetimepicker")
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap-datetimepicker")
+}
