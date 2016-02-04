@@ -1,0 +1,18 @@
+﻿@model Photography.Web.ViewModels.Photos.PhotoViewModel
+           
+<div class="col-md-4">
+    <p>
+        <strong>@Model.Title</strong>
+    </p>
+    <img src="@Model.Url" alt="photo" class="img-responsive" />
+    <p>Upload at: @Model.UploadDate</p>
+    <p>
+        Author: <strong>@Model.UserUserName</strong>
+    </p>
+    <p>
+        Camera: <strong>@Model.Equipment.CameraModel</strong>
+    </p>
+    <p>
+        Lens: <strong>@Model.Equipment.LenseModel</strong>
+    </p>
+</div>

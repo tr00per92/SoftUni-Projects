@@ -1,0 +1,9 @@
+﻿@model Photography.Web.ViewModels.Photos.PhotoPreviewViewModel
+           
+<div class="col-md-6">
+    <p>
+        <strong>@Model.Title</strong>
+    </p>
+    <img src="@Model.Url" alt="photo" class="img-responsive" />
+    <p>Upload at: @Model.UploadDate</p>
+</div>

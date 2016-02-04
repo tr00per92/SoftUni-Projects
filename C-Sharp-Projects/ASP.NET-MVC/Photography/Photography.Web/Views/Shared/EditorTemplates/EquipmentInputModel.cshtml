@@ -1,0 +1,28 @@
+﻿@model Photography.Web.InputModels.EquipmentInputModel
+           
+<h2>Add Equipment: </h2>
+@using (Ajax.BeginForm("AddEquipment", "Home", new AjaxOptions { UpdateTargetId = "equipment" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label for="CameraId" class="control-label col-md-3">Camera: </label>
+            <div class="col-md-9">
+                @Html.DropDownList("CameraId", @ViewBag.Cameras as IEnumerable<SelectListItem>, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="LenseId" class="control-label col-md-3">Lense: </label>
+            <div class="col-md-9">
+                @Html.DropDownList("LenseId", @ViewBag.Lenses as IEnumerable<SelectListItem>, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-3 col-md-9">
+                <input type="submit" value="Add Equipment" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,60 @@
+﻿@model Photography.Web.InputModels.AlbumInputModel
+@{
+    ViewBag.Title = "Create Album";
+}
+
+<h1>@ViewBag.Title</h1>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div id="photos">
+            <h3>Photographs: </h3>
+            <div class="form-group photo-group">
+                <label class="control-label col-md-2">Photograph </label>
+                <div class="col-md-10">
+                    @Html.DropDownList("PhotoIds", @ViewBag.Photos as IEnumerable<SelectListItem>, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.PhotoIds, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <a href="#" onclick="$('.photo-group').first().clone().appendTo($('#photos'));">
+                    Add more photographs
+                </a>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create Album" class="btn btn-primary"/>
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

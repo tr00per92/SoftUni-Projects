@@ -1,0 +1,15 @@
+﻿@model PagedList.IPagedList<Photography.Web.ViewModels.Photos.PhotoPreviewViewModel>
+@{
+    ViewBag.Title = "All Photos";
+}
+
+<div class="row">
+    <h1 class="text-center">@ViewBag.Title</h1>
+    <div class="col-md-8 col-md-offset-2">
+        @Html.Partial("_PhotosList", Model)
+
+        <div class="text-center">
+            @Html.PagedListPager(Model, page => Url.Action("Index", "Photos", new { page }))
+        </div>
+    </div>
+</div>

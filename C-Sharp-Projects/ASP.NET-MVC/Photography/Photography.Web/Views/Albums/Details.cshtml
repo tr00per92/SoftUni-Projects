@@ -1,0 +1,34 @@
+﻿@model Photography.Web.ViewModels.Albums.AlbumViewModel
+@{
+    ViewBag.Title = Model.Name;
+}
+
+<div class="row">
+    <h1>@ViewBag.Title</h1>
+    <p>@Model.Description</p>
+    <p>Author: @Model.UserEmail</p>
+
+    <h2>Photographs: </h2>
+    @if (Model.Photographs.Any())
+    {
+        var photos = Model.Photographs.ToList();
+        for (var i = 0; i < photos.Count; i++)
+        {
+            if (i % 3 == 0)
+            {
+                @:<div class="row">
+            }
+
+        @Html.DisplayFor(m => photos[i])
+
+            if ((i + 1) % 3 == 0 || i == photos.Count - 1)
+            {
+                @:</div><br/>
+            }
+        }
+    }
+    else
+    {
+        <p>There are no photos in this album</p>
+    }
+</div>

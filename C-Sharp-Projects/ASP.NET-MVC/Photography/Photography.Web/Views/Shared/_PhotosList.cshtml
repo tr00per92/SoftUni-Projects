@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Photography.Web.ViewModels.Photos.PhotoPreviewViewModel>
+
+@{ var photos = Model.ToList(); }
+@for (var i = 0; i < photos.Count; i++)
+{
+    if (i % 2 == 0)
+    {
+        @:<div class="row">
+    }
+
+    @Html.DisplayFor(m => photos[i])
+
+    if ((i + 1) % 2 == 0 || i == photos.Count - 1)
+    {
+        @:</div><br />
+    }
+}

@@ -1,0 +1,6 @@
+﻿@model Photography.Web.ViewModels.Albums.AlbumPreviewViewModel
+           
+<div class="row">
+    @Html.ActionLink(string.Format("{0} - {1}", Model.Name, Model.Description),
+        "Details", "Albums", new { id = Model.Id }, new { @class = "col-md-12" })
+</div>

@@ -1,0 +1,60 @@
+﻿@model Photography.Web.ViewModels.UserViewModel
+@{
+    ViewBag.Title = "User Profile";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>@Model.UserName</h1>
+        <p>Email: @Model.Email</p>
+        <p>Phone number: @(Model.PhoneNumber ?? "No")</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6" id="equipment">
+        @if (Model.Equipment == null && Model.UserName == User.Identity.GetUserName())
+        {
+            @Html.Partial("EditorTemplates/EquipmentInputModel", new Photography.Web.InputModels.EquipmentInputModel())
+        }
+        else if (Model.Equipment != null)
+        {
+            @Html.DisplayFor(m => m.Equipment)
+        }
+        else
+        {
+            <h2>Equipment: </h2>
+            <p>This user don't have any equipment.</p>
+        } 
+    </div>
+
+    <div class="col-md-6">
+        <h2>User Albums: </h2>
+        @if (Model.Albums.Any())
+        {
+            @Html.DisplayFor(m => m.Albums)
+        }
+        else
+        {
+            <p>This user don't have any albums.</p>
+        }
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <h2>User Photos: </h2>
+        @if (Model.Photographs.Any())
+        {
+            @Html.Partial("_PhotosList", Model.Photographs)
+        }
+        else
+        {
+            <p>This user don't have any photos.</p>
+        }
+    </div>
+</div>
+
+@section scripts {
+    @Scripts.Render("~/bundles/ajax")
+}
