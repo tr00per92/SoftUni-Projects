@@ -1,0 +1,7 @@
+﻿@model SportSystem.Web.ViewModels.Teams.TeamPreviewViewModel
+           
+<div class="team-preview">
+    <h3>@Html.ActionLink(Model.Name, "Details", "Teams", new { id = Model.Id }, null)</h3>
+    <a href="@Model.Website" target="_blank">@Model.Website</a>
+    <span class="pull-right">Votes: @Model.Votes</span>
+</div>

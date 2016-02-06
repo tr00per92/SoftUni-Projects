@@ -1,0 +1,48 @@
+﻿@model SportSystem.Web.ViewModels.Teams.TeamViewModel
+
+<div class="row">
+    <div class="col-md-8">
+        <h2>@Model.Name</h2>
+
+        @if (Model.Nickname != null)
+        {
+            <text>
+                @Html.LabelFor(m => m.Nickname): @Html.DisplayFor(m => m.Nickname)
+            </text>
+        }
+
+        @if (Model.Founded != null)
+        {
+            <text>
+                <br/>
+                @Html.LabelFor(m => m.Founded): @Html.DisplayFor(m => m.Founded)
+            </text>
+        }
+    </div>
+    <div class="col-md-4">
+        <h3>Votes: <span id="votes">@Model.Votes</span></h3>
+        @if (Model.UserHasVoted)
+        {
+            <em>You have voted</em>
+        }
+        else
+        {
+            using (Ajax.BeginForm("Vote", "Teams", new { id = Model.Id },
+                new AjaxOptions { OnSuccess = "$(this).fadeOut();", UpdateTargetId = "votes" }))
+            {
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn btn-success">+</button>
+            }
+        }
+    </div>
+</div>
+
+@if (Model.Players.Any())
+{
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Players: </h3>
+            @Html.DisplayFor(m => m.Players)
+        </div>
+    </div>
+}

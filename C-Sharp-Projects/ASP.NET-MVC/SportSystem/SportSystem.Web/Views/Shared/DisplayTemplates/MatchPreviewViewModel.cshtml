@@ -1,0 +1,6 @@
+﻿@model SportSystem.Web.ViewModels.Matches.MatchPreviewViewModel
+
+<div class="match-preview">
+    <h3>@Html.ActionLink(Model.HomeTeamName + " vs. " + Model.AwayTeamName, "Details", "Matches", new { id = Model.Id }, null)</h3>
+    Start: @Html.DisplayFor(m => m.Start)
+</div>

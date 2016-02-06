@@ -1,0 +1,76 @@
+﻿@model SportSystem.Web.ViewModels.Matches.MatchViewModel
+
+<div class="row">
+    <div class="col-md-8">
+        <h2>Match</h2>
+        <h4>
+            Home Team:
+            @Html.ActionLink(@Model.HomeTeamName, "Details", "Teams", new { id = @Model.HomeTeamId }, null)
+            (Bets: $<span id="home-bets">@Model.HomeTeamBets</span>)
+        </h4>
+        <h4>
+            Away Team:
+            @Html.ActionLink(@Model.AwayTeamName, "Details", "Teams", new { id = @Model.AwayTeamId }, null)
+            (Bets: $<span id="away-bets">@Model.AwayTeamBets</span>)
+        </h4>
+        <p>Date and Time: @Model.Start</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Bets</h2>
+        @using (Ajax.BeginForm("AddBet", "Matches", new { MatchId = @Model.Id, IsForHomeTeam = true },
+            new AjaxOptions { UpdateTargetId = "home-bets", OnSuccess = "$('#home-bet').val('');" },
+            new { @class = "form-inline" }))
+        {
+            @Html.AntiForgeryToken()
+            <label for="home-bet">Home bet: </label>
+            <input type="number" id="home-bet" name="Value" data-val-required data-val="true" class="form-control bet" />
+            <button type="submit" class="btn btn-primary">Bet</button>
+        }
+
+        <br />
+        @using (Ajax.BeginForm("AddBet", "Matches", new { MatchId = @Model.Id },
+            new AjaxOptions { UpdateTargetId = "away-bets", OnSuccess = "$('#away-bet').val('');" },
+            new { @class = "form-inline" }))
+        {
+            @Html.AntiForgeryToken()
+            <label for="away-bet">Home bet: </label>
+            <input type="number" id="away-bet" name="Value" data-val-required data-val-range-min="1" data-val="true" class="form-control bet" />
+            <button type="submit" class="btn btn-primary">Bet</button>
+        }
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h3>Comments: </h3>
+        <div id="comments">
+            @if (Model.Comments.Any())
+            {
+                @Html.DisplayFor(m => m.Comments)
+            }
+            else
+            {
+                <p id="no-comments">There are no comments yet.</p>
+            }
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h3>Add Comment: </h3>
+        @using (Ajax.BeginForm("AddComment", "Matches", new { MatchId = @Model.Id },
+            new AjaxOptions
+            {
+                UpdateTargetId = "comments", 
+                InsertionMode = InsertionMode.InsertAfter,
+                OnSuccess = "$('#no-comments').remove(); $('#comment-content').val('');"
+            }, 
+            null))
+        {
+            @Html.AntiForgeryToken()
+            <label for="comment-content">Comment: </label>
+            <textarea id="comment-content" name="Content" rows="3" class="form-control" data-val-required data-val="true"></textarea>
+            <br />
+            <button type="submit" class="btn btn-primary">Comment</button>
+        }
+    </div>
+</div>

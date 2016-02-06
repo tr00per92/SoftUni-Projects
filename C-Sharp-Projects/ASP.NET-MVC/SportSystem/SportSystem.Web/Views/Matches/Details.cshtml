@@ -1,0 +1,11 @@
+﻿@model SportSystem.Web.ViewModels.Matches.MatchViewModel
+@{
+    ViewBag.Title = "Match Details";
+}
+
+@Html.DisplayForModel()
+
+@section scripts {
+    @Scripts.Render("~/bundles/ajax")
+    @Scripts.Render("~/bundles/jqueryval")
+}

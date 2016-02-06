@@ -1,0 +1,7 @@
+﻿@model SportSystem.Web.ViewModels.CommentViewModel
+
+<div class="comment-preview">
+    <strong>@Model.AuthorEmail: </strong> @Model.Content
+    <br />
+    <em>Created on: @Html.DisplayFor(m => m.DateTime)</em>
+</div>

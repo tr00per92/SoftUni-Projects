@@ -1,0 +1,8 @@
+﻿@model SportSystem.Web.ViewModels.PlayerViewModel
+
+<div class="player-preview">
+    <h4>@Model.Name</h4>
+    @Html.LabelFor(m => m.DateOfBirth): @Html.DisplayFor(m => m.DateOfBirth)
+    <br />
+    @Html.LabelFor(m => m.Height): @Html.DisplayFor(m => m.Height)
+</div>
