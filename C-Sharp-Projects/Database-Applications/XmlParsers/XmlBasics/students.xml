@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" ?>
+<students xmlns="urn:students">
+  <student>
+    <name>Gosho Goshev</name>
+    <gender>M</gender>
+    <birthday>1990-05-20</birthday>
+    <phoneNumber>0888777666</phoneNumber>
+    <email>gecata@abv.bg</email>
+    <university>Sofia University</university>
+    <specialty>Cooking</specialty>
+    <facultyNumber>12656898</facultyNumber>
+    <takenExams>
+      <exam>
+        <name>Frying Eggs</name>
+        <dateTaken>2014-08-08</dateTaken>
+        <grade>6.00</grade>
+      </exam>
+      <exam>
+        <name>Making Chicken Soup</name>
+        <dateTaken>2014-10-18</dateTaken>
+        <grade>5.50</grade>
+      </exam>
+    </takenExams>
+  </student>
+  <student>
+    <name>Pesho Peshev</name>
+    <gender>M</gender>
+    <birthday>1993-05-22</birthday>
+    <email>pesho_pi4a@mail.bg</email>
+    <university>UNWE</university>
+    <specialty>Accounting</specialty>
+    <takenExams>
+      <exam>
+        <name>Accountancy Basics</name>
+        <dateTaken>2014-08-10</dateTaken>
+        <grade>6.00</grade>
+      </exam>
+      <exam>
+        <name>Corporate Finance</name>
+        <dateTaken>2015-01-18</dateTaken>
+        <grade>5.50</grade>
+      </exam>
+      <exam>
+        <name>Business Analysis</name>
+        <dateTaken>2015-02-18</dateTaken>
+        <grade>5.60</grade>
+      </exam>
+    </takenExams>
+  </student>
+</students>

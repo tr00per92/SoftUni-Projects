@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="albums">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="album">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="song">
+                <xs:complexType>
+                  <xs:attribute name="title" type="xs:string" use="required" />
+                  <xs:attribute name="duration" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required" />
+            <xs:attribute name="artist" type="xs:string" use="required" />
+            <xs:attribute name="year" type="xs:int" use="required" />
+            <xs:attribute name="producer" type="xs:string" use="required" />
+            <xs:attribute name="price" type="xs:decimal" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
