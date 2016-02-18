@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Peek.Web.ViewModels.Products.ProductPreviewViewModel>
+
+<h2 class="text-center break-word">@ViewBag.Title</h2>
+@*<div class="row">*@
+    @foreach (var product in Model)
+    {
+        <div class="col-md-3 no-padding product-container">
+            @Html.DisplayFor(m => product)
+        </div>
+    }
+@*</div>*@

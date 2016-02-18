@@ -1,0 +1,10 @@
+﻿@model Peek.Web.ViewModels.CategoryViewModel
+@{
+    ViewBag.Title = "Edit category " + @Model.Id;
+}
+
+@Html.EditorForModel()
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

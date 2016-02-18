@@ -1,0 +1,18 @@
+﻿@model Peek.Web.ViewModels.Products.ProductViewModel
+@{
+    ViewBag.Title = Model.Name;
+}
+
+<div class="well">
+    @Html.DisplayForModel()
+    <div style="clear:both;"></div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/lightbox.min.js"></script>
+}
+
+@section Styles {
+    <link href="~/Content/lightbox.css" rel="stylesheet" />
+}

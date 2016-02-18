@@ -1,0 +1,9 @@
+﻿@model Peek.Web.ViewModels.Products.ProductPreviewViewModel
+
+<a href="@Url.Action("ById", "Products", new { id = Model.Id })">
+    <div class="well text-center center-block">
+        <span class="break-word">@Model.Name</span>
+        <img src="@(Model.ImageUrl ?? "/Images/default-image.jpg")" alt="product-image"
+             class="img-responsive img-rounded product-image" />
+    </div>
+</a>

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Peek.Web.ViewModels.Products.ProductPreviewViewModel>
+@{
+    ViewBag.Title = "My cart";
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+
+@if (Model.Any())
+{
+    <div id="order-div">
+        @foreach (var product in Model)
+        {
+            <div>
+                @Html.ActionLink(product.Name, "ById", "Products", new { id = product.Id }, null)
+                @Ajax.RawActionLink("<span class='glyphicon glyphicon-remove'></span>", "Remove", "Cart", new { id = product.Id },
+                     new AjaxOptions { HttpMethod = "POST" }, new { onclick = "$(this).parent().fadeOut()", title = "Remove" })
+            </div>
+        }
+
+        <br />
+        @using (Ajax.BeginForm("Order", "Cart", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "order-div" }, new { id = "order-form" }))
+        {
+            @Html.AntiForgeryToken()
+            <a href="#" data-ajax="true" onclick="$('#order-form').submit()">Place order</a>
+        }
+    </div>
+}
+else
+{
+    <p class="text-center">Your cart is empty at the moment.</p>
+}
