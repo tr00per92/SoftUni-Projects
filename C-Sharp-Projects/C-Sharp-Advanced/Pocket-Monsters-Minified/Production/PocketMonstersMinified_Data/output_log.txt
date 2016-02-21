@@ -1,0 +1,24 @@
+Initialize engine version: 4.5.4f1 (e036f44c54c9)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Projects\SoftUni-Projects\C-Sharp-Projects\C-Sharp-Advanced\Pocket-Monsters-Minified\Production\PocketMonstersMinified_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Projects\SoftUni-Projects\C-Sharp-Projects\C-Sharp-Advanced\Pocket-Monsters-Minified\Production\PocketMonstersMinified_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Projects\SoftUni-Projects\C-Sharp-Projects\C-Sharp-Advanced\Pocket-Monsters-Minified\Production\PocketMonstersMinified_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Projects\SoftUni-Projects\C-Sharp-Projects\C-Sharp-Advanced\Pocket-Monsters-Minified\Production\PocketMonstersMinified_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.090 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Projects\SoftUni-Projects\C-Sharp-Projects\C-Sharp-Advanced\Pocket-Monsters-Minified\Production\PocketMonstersMinified_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Projects\SoftUni-Projects\C-Sharp-Projects\C-Sharp-Advanced\Pocket-Monsters-Minified\Production\PocketMonstersMinified_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 8.475103 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 9907.
+Total: 3.526790 ms (FindLiveObjects: 1.186363 ms CreateObjectMapping: 0.108070 ms MarkObjects: 0.772796 ms  DeleteObjects: 0.055544 ms)
+

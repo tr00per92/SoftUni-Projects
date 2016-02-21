@@ -1,0 +1,32 @@
+-Earth Pokemon :
+--Atack Damage : 6
+--Health Points : 45-50
+-Earth Abilities :
+--Aftershock : Damage(9) Hit chance(70%) Cooldown(2)
+--Eruption : Damage(7) Heal(5) Hit chance(50%) Cooldown (4)
+--Cataclysm : Damage(100) Hit chance(10%) Cooldown(5)
+
+-Lightning Pokemon :
+--Atack Damage : 5
+--Health Points : 37-40
+-Lightning Abilities :
+--Thundershock : Damage(7) Hit chance(90%) Cooldown(2)
+--Recharge : Heal(8) Hit Chance (80%) Cooldown(3)
+--Supernova : Damage (16) Hit Chance (50%) Cooldown (4)
+
+-Fire Pokemon : 
+--Atack Damage : 4
+--Health Points : 40-42
+-Fire Abilities : 
+--Firebreath : Damage (4) Heal (4) Hit chance (80%) Cooldown(2)
+--Flamestrike : Damage (9) Hit Chance (70%) Cooldown (2)
+--Armageddon : Damage (20) Hit Chance (30%) Cooldown (5)
+
+-Frost Pokemon :
+--Atack Damage : 3
+--Health Points : 43-45
+-Frost Abilities :
+--Frostbolt : Damage (5) Hit Chance (90%) Cooldown (1)
+--Balefrost : Damage (8) Hit Chance (80%) Cooldown (2)
+--Glacialstorm : Damage (12) Hit Chance (90%) Cooldown (4)
+

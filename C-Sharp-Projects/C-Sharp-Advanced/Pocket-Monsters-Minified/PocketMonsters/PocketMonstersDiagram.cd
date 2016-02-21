@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Abilities.Ability" Collapsed="true">
+    <Position X="10.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Ability.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Abilities.Aftershock" Collapsed="true">
+    <Position X="8" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAACAAAAAgAAAAAAgABAAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Aftershock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.Armageddon" Collapsed="true">
+    <Position X="16.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQBAAAAAAAAAIAAEAAAQAAAAAEAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Armageddon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.Balefrost" Collapsed="true">
+    <Position X="20.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAEAAAAAAAAIAAEAAAAAAAgAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Balefrost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.Cataclysm" Collapsed="true">
+    <Position X="22" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAkAAAAAAAAAAAAAAQAAAAAAgAEAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Cataclysm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.DamageAbility" Collapsed="true">
+    <Position X="10.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\DamageAbility.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Abilities.Enflame" Collapsed="true">
+    <Position X="27.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MQAAAAAAAAAAAAAAAAAAAAAAAAAAABAARAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Enflame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.Eruption" Collapsed="true">
+    <Position X="29" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAEAAAACAAgAAQAAAACAAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Eruption.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.Firebreath" Collapsed="true">
+    <Position X="6.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACCIAAACAAAAAAAAAIAAgAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Firebreath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.Flamestrike" Collapsed="true">
+    <Position X="9.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAABAAACAAAAAAAQAAAAAAAAACAAAIAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Flamestrike.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.Frostbolt" Collapsed="true">
+    <Position X="15" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAACAgAAAEAAAAAgAAAAQ=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Frostbolt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.GlacialStorm" Collapsed="true">
+    <Position X="18.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAGAAAAAAAAAAAAAAAAAAAAEAgAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Glacialstorm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.HealAbility" Collapsed="true">
+    <Position X="7.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\HealAbility.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Abilities.IceBlade" Collapsed="true">
+    <Position X="23.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAADAAAAAAAAQAEACAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Iceblade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.Lightning" Collapsed="true">
+    <Position X="25.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAABAQAAAAAAAAAAgAAAABAAAAgA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Lightning.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.Recharge" Collapsed="true">
+    <Position X="5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAGAAgAAAAAAAAAAAIAgAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Recharge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.SandStorm" Collapsed="true">
+    <Position X="30.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAACAAAAAAAAAAAgARAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Sandstorm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.SpecialAbility" Collapsed="true">
+    <Position X="10.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAABAAACAAAAAAAEEAAAAAABEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\SpecialAbility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.SuperNova" Collapsed="true">
+    <Position X="11.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAAAAAAAAAAIAAAAAAAAAAAABAAAAAAAIAACAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\Supernova.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abilities.Thundershock" Collapsed="true">
+    <Position X="13.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAJAAAAkCAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\ThunderShock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.GameElement" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Common\GameElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.TargetMissingException" Collapsed="true">
+    <Position X="42.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Common\TargetMissingException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Creatures.Bandit" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAABAEAAAAAAABA=</HashCode>
+      <FileName>Assets\Scripts\Creatures\Bandit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Creatures.EnemyNpc" Collapsed="true">
+    <Position X="4.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAgAAAAEAAQAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Creatures\EnemyNpc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Creatures.FriendlyNpc" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAgAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Creatures\FriendlyNpc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Creatures.Hero" Collapsed="true">
+    <Position X="2.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAgAAAEIAgARAKAAIIACQCAQAAAAAAAAABQwAQAEA=</HashCode>
+      <FileName>Assets\Scripts\Creatures\Hero.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Creatures.Nakov" Collapsed="true">
+    <Position X="3" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAgAABAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Creatures\Nakov.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Creatures.Npc" Collapsed="true">
+    <Position X="6" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAgAABAAAAAQAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Creatures\Npc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Creatures.VillageGirl" Collapsed="true">
+    <Position X="7.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAABAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Creatures\VillageGirl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Environment.Battlefield" Collapsed="true">
+    <Position X="42.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gARSQAAEBKEACUBQUAKAEAAgQhUABBAgXAiAAQgDAEA=</HashCode>
+      <FileName>Assets\Scripts\Environment\Battlefield.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Items.FoodItem" Collapsed="true">
+    <Position X="38.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Items\FoodItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Items.Item" Collapsed="true">
+    <Position X="38.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgBEAAAARAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Items\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Bulbasaur" Collapsed="true">
+    <Position X="17.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Bulbasaur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Charizard" Collapsed="true">
+    <Position X="21.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Charizard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Charmander" Collapsed="true">
+    <Position X="24.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Charmander.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Frogadier" Collapsed="true">
+    <Position X="26.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Frogadier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Groudon" Collapsed="true">
+    <Position X="28.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Groudon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Kadabra" Collapsed="true">
+    <Position X="31.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Kadabra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Meowth" Collapsed="true">
+    <Position X="35.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Meowth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.MewTwo" Collapsed="true">
+    <Position X="12.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\MewTwo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Nidoqueen" Collapsed="true">
+    <Position X="16" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Nidoqueen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Paras" Collapsed="true">
+    <Position X="19.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Paras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Pikachu" Collapsed="true">
+    <Position X="23" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Pikachu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Pokemon" Collapsed="true">
+    <Position X="20.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAARAAAAAACAIAAAAAAAQAAAAUAAAAAQAAEAAAAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Pokemon.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pokemons.Roggenrola" Collapsed="true">
+    <Position X="30" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Roggenrola.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Rattata" Collapsed="true">
+    <Position X="33.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Rattata.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Snorlax" Collapsed="true">
+    <Position X="37" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Snorlax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pokemons.Squirtle" Collapsed="true">
+    <Position X="14.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAEAAAAAAAAAAQAABAAAAAAAIAAE=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\Squirtle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scripts.AnimatedSprites" Collapsed="true">
+    <Position X="41" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAMAAAAAAIAABAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\AnimatedSprites.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scripts.GameData" Collapsed="true">
+    <Position X="44.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAggAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scripts.GameOver" Collapsed="true">
+    <Position X="41" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAAACAAAAAAIAAAAAAAAAAAAAABAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Scripts\GameOver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scripts.WelcomeScreen" Collapsed="true">
+    <Position X="44.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAACAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\WelcomeScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scripts.WorldInitializer" Collapsed="true">
+    <Position X="41" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAACAAAEACAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\WorldInitializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Items.Apple" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAQgAAAAAAAAAEAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\Items\Apple.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Items.Banana" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAQgAAAAAAAAAEAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\Items\Banana.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Interface Name="Interfaces.IAbility" Collapsed="true">
+    <Position X="44.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces\IAbility.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Interfaces.IDamageAbility" Collapsed="true">
+    <Position X="44.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces\IDamageAbility.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Interfaces.IDrawable" Collapsed="true">
+    <Position X="42.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces\IDrawable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Interfaces.IEatable" Collapsed="true">
+    <Position X="41" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces\IEatable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Interfaces.IHealingAbility" Collapsed="true">
+    <Position X="44.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces\IHealingAbility.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Interfaces.IMovable" Collapsed="true">
+    <Position X="41" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces\IMovable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Interfaces.IPokemon" Collapsed="true">
+    <Position X="41" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAARAAAAAACAIAAAAAAAQAAAAUAAAAAQAAEAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces\IPokemon.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Interfaces.IPokemonTrainer" Collapsed="true">
+    <Position X="42.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces\IPokemonTrainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Interfaces.ITalkable" Collapsed="true">
+    <Position X="42.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces\ITalkable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Abilities.AbilityType" Collapsed="true">
+    <Position X="43.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABgAAEAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Abilities\AbilityType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Creatures.FoodItems" Collapsed="true">
+    <Position X="41.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Creatures\FoodItems.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Items.RandomFoodItemsTypes" Collapsed="true">
+    <Position X="43.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAEACABABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Items\RandomFoodItemsTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Pokemons.PokemonType" Collapsed="true">
+    <Position X="41.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABgAAEAAAAAAAIAAAAAAAAAAAkAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Pokemons\PokemonType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
