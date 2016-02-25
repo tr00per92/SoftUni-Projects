@@ -1,0 +1,218 @@
+$customRed: rgb(233, 80, 49);
+$customBlack: rgb(50, 50, 50);
+$background: slategray;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Bookman Old Style;
+}
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+  body {
+    background-color: #55728b;
+    font: normal 11px "Open Sans",tahoma,helvetica,arial,sans-serif;
+    position: relative;
+    zoom: 1;
+    background-image: url("../images/shattered.png");
+    header {
+      max-width: 70%;
+      margin: 0 auto;
+      aside ul li a {
+        text-decoration: none;
+        &:before{
+          content: url("../images/nav_forums.png");
+          display: inline-block;
+        }
+        color: #fff;
+        text-align: right;
+        height: 100%;
+        width: 110px;
+        display: block;
+        outline: none;
+        line-height: 30px;
+        position: relative;
+      }
+      ol, ul {
+        list-style: none;
+        display: block;
+        width: 55%;
+        height: 50px;
+      }
+      ol li, ul li {
+        text-align: left;
+        font-size: 1.5rem;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 3%;
+        height: 100%;
+        background-color: #323232;
+        padding: 2%;
+        &:hover{
+          background-color: rgb(70, 70, 70);
+        }
+      }
+      ol li a, ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+      }
+      .logo-container {
+        background-color: #323232;
+        color: white;
+        padding: 10px;
+      }
+      .sub-container {
+        background-color: #e95031;
+        border-bottom: 1px solid #323232;
+        padding: 1% 2% 0 2%;
+        #login-container {
+          display: inline-block;
+          width: 60%;
+          color: #ffffff;
+          font-size: 1.3rem;
+          form {
+            width: 100%;
+            input {
+              width: 25%;
+              height: 25px;
+              display: inline-block;
+              outline: none;
+              border: none;
+              &[type='text'], &[type='password'] {
+                padding: 1%;
+              }
+              &[type='button'] {
+                width: 20%;
+                margin-left: 1%;
+                cursor: pointer;
+                background: $customBlack;
+                color: #FFF;
+                &:hover {
+                  background: rgb(70, 70, 70)
+                }
+              }
+            }
+          }
+        }
+        #logged-in-container{
+          width: 60%;
+          color: #ffffff;
+          font-size: 1.8rem;
+          p {
+            display: inline-block;
+          }
+          a {
+            color: $customBlack;
+            text-decoration: none;
+            &:hover{
+              color: orange;
+            }
+          }
+        }
+        #addQuestion {
+          color: #fff;
+          text-align: center;
+          outline: none;
+          &:before {
+            content: url("../images/nav_content.png");
+            vertical-align: -30%;
+          }
+        }
+        #registration {
+          color: #fff;
+          text-align: center;
+          outline: none;
+          &:before {
+            content: url("../images/nav_members.png");
+            vertical-align: -30%;
+          }
+        }
+        #index {
+          color: #fff;
+          outline: none;
+          &:before {
+            content: url("../images/nav_home.png");
+            vertical-align: -30%;
+          }
+        }
+        #nav-menu {
+          display: block;
+          font-weight: bold;
+          margin-top: 2%;
+        }
+        #search-field {
+          vertical-align: top;
+          height: 34px;
+          font-size: 12pt;
+        }
+        #search-form {
+          float: right;
+        }
+        #search-button {
+          background: #323232 url("../images/search_icon.png") no-repeat 50%;
+          box-shadow: 3px 3px 1px 0 #5d2013;
+          -moz-box-shadow: 3px 3px 1px 0 #5d2013;
+          -webkit-shadow: 3px 3px 1px 0 #5d2013;
+          outline: 0;
+          border: none;
+          width: 34px;
+          height: 34px;
+          border-radius: 3px;
+          margin-left: -3px;
+          &:focus {
+            outline: none;
+          }
+          &:active {
+            outline: none;
+            position: relative;
+            top: 3px;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-shadow: none;
+          }
+        }
+        #search {
+          display: inline;
+          width: 45%;
+        }
+        #logged-in-container {
+          display: none;
+        }
+        #login-form {
+          width: 173px;
+          float: left;
+          padding: 3px;
+        }
+      }
+    }
+    #main-content {
+      #page-navigation {
+        margin: 10px 0;
+        a {
+          margin: 0 2px;
+          padding: 5px 10px;
+          font-size: 1.8em;
+          background-color: rgb(50, 50, 50);
+          color: #ffffff;
+          text-decoration: none;
+          border-radius: 2px;
+          &:hover {
+            color: $customRed;
+          }
+        }
+        .active-page {
+          background-color: $customRed;
+          color: $customBlack;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

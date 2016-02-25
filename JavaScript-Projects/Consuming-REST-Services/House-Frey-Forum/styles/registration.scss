@@ -1,0 +1,109 @@
+$customRed: rgb(233, 80, 49);
+$customBlack: rgb(50, 50, 50);
+$backgound: slategray;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+main{
+  h1{
+    color: $customBlack;
+    margin-bottom: 5%;
+  }
+  width: 70%;
+  height: 60%;
+  margin: 0 auto;
+  font-size: 2rem;
+  background-color: $backgound;
+  padding: 2%;
+  border-radius: 3px;
+  .registration-form{
+    text-align: center;
+    margin: 5% auto;
+    width: 75%;
+    height: 65%;
+    background-color: darkgray;
+    border: 2px solid orange;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    div {
+      margin-bottom: 3%;
+      input{
+        float: right;
+        width: 65%;
+        height: 30px;
+        border-radius: 2px;
+        border: 1px solid $customRed;
+        padding: 2%;
+        &:focus, &:active{
+          outline: none;
+        }
+        font-size: 1.5rem;
+      }
+      label{
+        float: left;
+        min-width: 120px;
+        text-align: left;
+      }
+      label.error {
+        display: block;
+        width: 100%;
+        color: red;
+        text-align: center;
+        margin-top: 1%;
+      }
+      &:after{
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+      }
+    }
+    .user-data-wrapper{
+      width: 55%;
+      margin: 2% auto;
+      &:after{
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+      }
+    }
+    button{
+      cursor: pointer;
+      margin: 2% auto;
+      width: 20%;
+      height: 35px;
+      background-color: $customRed;
+      box-shadow: 3px 3px 1px 0 rgb(93,32,19);
+      -moz-box-shadow: 3px 3px 1px 0 rgb(93,32,19);
+      -webkit-shadow: 3px 3px 1px 0 rgb(93,32,19);
+      border: none;
+      outline: none;
+      color: $customBlack;
+      font-size: 2rem;
+      border-radius: 2px;
+      &:focus, &:active{
+        outline: none;
+      }
+      &:active {
+        position: relative;
+        top: 3px;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-shadow: none;
+      }
+    }
+    .successful-registration{
+      color: darkgreen;
+      font-size: 2.5rem;
+      vertical-align: middle;
+      margin: 2% auto;
+      font-weight: bold;
+      opacity: 0;
+    }
+  }
+}

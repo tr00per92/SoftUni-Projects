@@ -1,0 +1,164 @@
+$customRed: #e95031;
+$background: slategray;
+$groveOrange: groove orange;
+$customBlack: rgb(50, 50, 50);
+
+main {
+  max-width: 70%;
+  margin: 0 auto;
+  background-color: $background;
+  padding: 2%;
+  &:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+  > div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 2%;
+    width: 70%;
+    section {
+      h1 {
+        padding: 1%;
+        height: 7%;
+        font-size: 2.5rem;
+        color: aliceblue;
+        background-color: $customRed;
+        font-weight: normal;
+        border-bottom: 3px solid orange;
+      }
+      .question {
+        background-color: rgb(172, 178, 183);
+        padding: 2%;
+        border-bottom: 1px solid darkgray;
+        .content {
+          font-size: 1.8rem;
+          background-color: rgba(255, 255, 255, 0.5);
+          padding: 1%;
+          border-radius: 3px;
+        }
+        .meta-data {
+          font-size: 1.4rem;
+          margin-bottom: 2%;
+          .nickname {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1%;
+          }
+          .question-tags {
+            float: right;
+          }
+        }
+        .tags{
+          display: block;
+          border-top: 1px solid rgba(255, 255, 255, 0.5);
+          margin-top: 1.5%;
+          padding-top: 1%;
+          a{
+            font-size: 1.5rem;
+            color: black;
+            display: inline-block;
+            margin-right: 1.5%;
+            &:hover{
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      .answer {
+        background-color: aliceblue;
+        padding: 2%;
+        border-bottom: 1px solid darkgray;
+        .nickname {
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+        .meta-data {
+          font-size: 1.4rem;
+          margin-bottom: 1%;
+        }
+      }
+      article {
+        height: 30%;
+        padding: 1% 2% 2% 2%;
+        border-bottom: 1px groove orange;
+        background-color: darkgray;
+        width: 100%;
+        font-size: 1.4rem;
+        a {
+          font-size: 1.7rem;
+          color: whitesmoke;
+          text-decoration: none;
+          &:hover {
+            color: $customBlack;
+          }
+        }
+      }
+    }
+    .new-answer-wrapper {
+      margin-top: 2%;
+      input {
+        width: 40%;
+        height: 30px;
+        padding: 1%;
+        margin: 2% auto;
+        display: block;
+      }
+      button {
+        margin-bottom: 2%;
+        height: 35px;
+        background-color: $customRed;
+        box-shadow: 3px 3px 1px 0 rgb(93, 32, 19);
+        -moz-box-shadow: 3px 3px 1px 0 rgb(93, 32, 19);
+        -webkit-shadow: 3px 3px 1px 0 rgb(93, 32, 19);
+        border: none;
+        outline: none;
+        color: $customBlack;
+        font-size: 2rem;
+        border-radius: 2px;
+        &:focus, &:active {
+          outline: none;
+        }
+        &:active {
+          position: relative;
+          top: 3px;
+          box-shadow: none;
+          -moz-box-shadow: none;
+          -webkit-shadow: none;
+        }
+      }
+      > div {
+        text-align: center;
+        #toggle-reply-btn {
+          cursor: pointer;
+          width: 20%;
+        }
+      }
+      > #new-answer{
+        margin: 0 auto;
+        text-align: center;
+        #save-reply-btn {
+          cursor: pointer;
+          width: 35%;
+          margin-top: 2%;
+        }
+        label.error {
+          color: red;
+          display: block;
+          text-align: center;
+          font-size: 2rem;
+        }
+        textarea {
+          display: block;
+          margin: 2% auto;
+          width: 400px;
+          height: 150px;
+          padding: 1%;
+        }
+      }
+    }
+  }
+}
