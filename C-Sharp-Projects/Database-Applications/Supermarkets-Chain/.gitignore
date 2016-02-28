@@ -1,0 +1,13 @@
+*.[Ss]uo
+*.[Cc]lass
+*.[Cc]ache
+
+[Bb]in/
+[Oo]bj/
+[Pp]ackages/
+
+Json-Reports/
+Aggregated-Sales-Report.pdf
+Sales-by-Vendors-Report.xml
+SupermarketsChain.sqlite
+Financial-Results.xlsx
