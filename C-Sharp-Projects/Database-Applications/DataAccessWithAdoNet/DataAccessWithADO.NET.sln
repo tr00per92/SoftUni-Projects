@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetNumberOfRows", "GetNumberOfRows\GetNumberOfRows.csproj", "{D719F923-CBC8-4614-BF2B-846D628D7F27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetNameAndDescription", "GetNameAndDescription\GetNameAndDescription.csproj", "{F981DA69-CA56-4AB4-B8E3-836A4ADE17B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetCategoriesWithProducts", "GetCategoriesWithProducts\GetCategoriesWithProducts.csproj", "{958B465D-2C76-4110-BD02-F6DC280C3456}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddProduct", "AddProduct\AddProduct.csproj", "{2DD96ACC-B428-44E7-859E-7BD3C4A682A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveImages", "SaveImages\SaveImages.csproj", "{D6E88751-3628-4B8A-8983-AE044CD03F59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithExcel", "WorkingWithExcel\WorkingWithExcel.csproj", "{DA0BE2E9-7D84-4514-91D0-CE2FB1A718BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D719F923-CBC8-4614-BF2B-846D628D7F27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D719F923-CBC8-4614-BF2B-846D628D7F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D719F923-CBC8-4614-BF2B-846D628D7F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D719F923-CBC8-4614-BF2B-846D628D7F27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F981DA69-CA56-4AB4-B8E3-836A4ADE17B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F981DA69-CA56-4AB4-B8E3-836A4ADE17B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F981DA69-CA56-4AB4-B8E3-836A4ADE17B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F981DA69-CA56-4AB4-B8E3-836A4ADE17B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{958B465D-2C76-4110-BD02-F6DC280C3456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958B465D-2C76-4110-BD02-F6DC280C3456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958B465D-2C76-4110-BD02-F6DC280C3456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958B465D-2C76-4110-BD02-F6DC280C3456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD96ACC-B428-44E7-859E-7BD3C4A682A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD96ACC-B428-44E7-859E-7BD3C4A682A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD96ACC-B428-44E7-859E-7BD3C4A682A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD96ACC-B428-44E7-859E-7BD3C4A682A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E88751-3628-4B8A-8983-AE044CD03F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E88751-3628-4B8A-8983-AE044CD03F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E88751-3628-4B8A-8983-AE044CD03F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E88751-3628-4B8A-8983-AE044CD03F59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA0BE2E9-7D84-4514-91D0-CE2FB1A718BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA0BE2E9-7D84-4514-91D0-CE2FB1A718BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA0BE2E9-7D84-4514-91D0-CE2FB1A718BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA0BE2E9-7D84-4514-91D0-CE2FB1A718BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
