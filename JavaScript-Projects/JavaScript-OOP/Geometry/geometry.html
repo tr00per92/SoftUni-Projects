@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Geometry API</title>
+    <link href="geometry.css" rel="stylesheet"/>
+    <script src="shapes.js" defer></script>
+    <script src="geometry.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Canvas Geometry API</h1>
+        <h4>Optimized for Google Chrome</h4>
+    </header>
+    <form>
+        <label for="x">X: </label>
+        <input type="number" min="0" max="550" id="x"/>
+        <label for="y">Y: </label>
+        <input type="number" min="0" max="550" id="y"/>
+        <label for="color">Color: </label>
+        <input type="color" id="color" value="#FF0000"/>
+        <br>
+        <label for="shapeSelector">Type: </label>
+        <select id="shapeSelector">
+            <option value="circle" selected>Circle</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="triangle">Triangle</option>
+            <option value="segment">Segment</option>
+            <option value="point">Point</option>
+        </select>
+        <div id="shapeAttributes">
+            <label for="r">Radius: </label>
+            <input type="number" min="0" max="550" id="r"/>
+        </div>
+        <button type="button" id="addButton">ADD</button>
+        <div id="shapesInfo"></div>
+    </form>
+    <canvas id="myCanvas" width="550" height="400"></canvas>
+</body>
+</html>
